@@ -54,7 +54,8 @@ $(document).ready(function(){
   });
   $('.week-month').click(function () {
     var weekMonthOptions = $('.week-month');
-    if ( $(this).attr('aria-checked') === 'false' ) {
+    if ( $('.week-month').attr('aria-checked') === 'false' ) {
+      $('.calendar').addClass('week').removeClass('month');
       weekMonthOptions.each(function(index){
         $(this).removeClass('toggled');
         $(this).attr('aria-checked','false');
@@ -62,17 +63,13 @@ $(document).ready(function(){
       $(this).addClass('toggled');
       $(this).attr('aria-checked','true');
     } else {
+      $('.calendar').addClass('month').removeClass('week');
       weekMonthOptions.each(function(index){
         $(this).addClass('toggled');
         $(this).attr('aria-checked','true');
       });
       $(this).removeClass('toggled');
       $(this).attr('aria-checked','false');
-    }
-    if ( $('.week-month').attr('aria-checked') === 'false' ) {
-      $('.calendar').addClass('week').removeClass('month');
-    } else {
-      $('.calendar').addClass('month').removeClass('week');
     }
   });
 });
