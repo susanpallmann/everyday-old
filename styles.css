@@ -60,8 +60,7 @@ h4 {
   letter-spacing: 0.15em;
   max-width: 350px;
   display: block;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: auto 20px auto 20px;
 }
 .small-container {
   display: block;
