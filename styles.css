@@ -108,13 +108,13 @@ i.material-icons::selection {
   display: none;
   transform: scaleY(0);
 }
-.expand-collapse {
+i.material-icons.expand-collapse {
   font-size: 18px;
   float: right;
   margin-top: 11px;
   margin-right: -8px;
   color: rgba(38, 67, 95, 0.2);
 }
-.night .expand-collapse {
+.night i.material-icons..expand-collapse {
   color: rgba(255, 255, 255, 0.2);
 }
