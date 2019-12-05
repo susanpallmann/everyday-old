@@ -102,6 +102,12 @@ h4 {
   box-sizing: border-box;
   display: inline-block;
   cursor: pointer;
+  transition-property: border;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: border;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .month .day.first {
   background-color: #40C8C2;
