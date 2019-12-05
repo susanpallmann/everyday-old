@@ -57,12 +57,12 @@ $(document).ready(function(){
     if ( $(this).attr('aria-checked') === 'false' ) {
        weekMonthOptions.each(function(index){
          $(this).removeClass('toggled');
-       }
+       });
        $(this).addClass('toggled');
     } else {
       weekMonthOptions.each(function(index){
          $(this).addClass('toggled');
-       }
+       });
        $(this).removeClass('toggled');
     }
   });
