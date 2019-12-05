@@ -20,6 +20,12 @@ span.emphasis {
 a {
   text-decoration: none;
   color: #EE559C;
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .night a {
   color: #DA83FF
@@ -68,5 +74,8 @@ h3 {
 }
 .panel.special {
   background-color: #40C8C2;
+  color: #ffffff;
+}
+panel.special h3 {
   color: #ffffff;
 }
