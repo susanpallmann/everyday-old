@@ -33,7 +33,7 @@ $(document).ready(function(){
   var currentDay = today.getDate();
   var currentMonth = today.getMonth();
   var currentYear = today.getFullYear();
-  var monthString = monthtoString(currentMonth);
+  var monthString = monthToString(currentMonth);
   function monthToString(val) {
     var number = val;
     var allMonths = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
