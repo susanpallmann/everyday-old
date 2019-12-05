@@ -85,7 +85,7 @@ h4 {
   margin: auto;
 }
 .month .day {
-  max-width: 13%;
+  width: 13%;
   height: 18.5%;
   background-color: #26435F;
   box-sizing: border-box;
