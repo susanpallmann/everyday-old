@@ -33,6 +33,12 @@ h3 {
 .night .panel.selected {
   border: 2px solid #DA83FF;
 }
+.panel i.material-icons {
+  color: #26435F;
+}
+.night .panel i.material-icons {
+  color: #FFFFFF;
+}
 
 /* General Styles */
 body {
@@ -130,12 +136,6 @@ footer p {
 .panel.special h3 {
   color: #ffffff;
 }
-.panel i.material-icons {
-  color: #26435F;
-}
-.night .panel i.material-icons {
-  color: #FFFFFF;
-}
 .panel.special i.material-icons {
   color: #FFFFFF;
 }
@@ -154,12 +154,13 @@ footer p {
   margin: auto;
 }
 .day {
-  transition-property: background-color;
+  transition-property: border, background-color, width, height;
   transition-duration: .2s;
   transition-timing-function: linear;
-  -webkit-transition-property: background-color;
+  -webkit-transition-property: border;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
+  margin-bottom: 4px;
 }
 .month .day {
   width: 13%;
@@ -189,13 +190,6 @@ footer p {
   display: inline-block;
   cursor: pointer;
   border: 3px solid rgba(0, 0, 0, 0);
-  transition-property: border, background-color, width, height;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: border;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
-  margin-bottom: 4px;
 }
 .month .day h4 {
   display: none;
