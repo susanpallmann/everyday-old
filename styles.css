@@ -54,6 +54,13 @@ h3 {
   color: #26435F;
   width: 100%;
 }
+h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letterspacing: 0.02em;
+}
+.night h4 {
+}
 .night h3 {
   color: #FFFFFF;
 }
