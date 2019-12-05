@@ -50,3 +50,7 @@ i.material-icons {
   margin-top: 10px;
   margin-right: 10px;
 }
+.invisible {
+  display: none;
+  opacity: 0;
+}
