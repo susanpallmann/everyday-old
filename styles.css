@@ -2,12 +2,6 @@ body {
   background-color: #F0F0F0;
   color: #102438;
   font-family: "raleway", sans-serif;
-  transition-property: color;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
 }
 body.night {
   background-color: #102438;
@@ -61,6 +55,12 @@ h3 {
   font-size: 0.8em;
   color: #707C88;
   font-weight: 500;
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .night .panel {
   background-color: #26435F;
