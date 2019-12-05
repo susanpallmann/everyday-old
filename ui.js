@@ -38,7 +38,7 @@ $(document).ready(function(){
   var nextMonthStart = new Date(currentYear, nextMonth,1);
   var firstDay = new Date(currentYear, currentMonth, 1);
   var firstWeekday = firstDay.getDay() + 1;
-  var numDays = new Date(nextMonthStart - 1).getDate() + firstWeekday;
+  var numDays = new Date(nextMonthStart - 1).getDate() + firstWeekday - 1;
   var month = $('.month');
   month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
   console.log(numDays);
