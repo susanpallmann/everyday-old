@@ -55,15 +55,19 @@ $(document).ready(function(){
   $('.week-month').click(function () {
     var weekMonthOptions = $('.week-month');
     if ( $(this).attr('aria-checked') === 'false' ) {
-       weekMonthOptions.each(function(index){
-         $(this).removeClass('toggled');
-       });
-       $(this).addClass('toggled');
+      weekMonthOptions.each(function(index){
+        $(this).removeClass('toggled');
+        $(this).attr('aria-checked','false');
+      });
+      $(this).addClass('toggled');
+      $(this).attr('aria-checked','true');
     } else {
       weekMonthOptions.each(function(index){
-         $(this).addClass('toggled');
-       });
-       $(this).removeClass('toggled');
+        $(this).addClass('toggled');
+        $(this).attr('aria-checked','true');
+      });
+      $(this).removeClass('toggled');
+      $(this).attr('aria-checked','false');
     }
   });
 });
