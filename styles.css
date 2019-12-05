@@ -125,5 +125,5 @@ i.material-icons::selection {
   color: rgba(255, 255, 255, 0.2);
 }
 .panel.special i.material-icons.expand-collapse, .night .panel.special i.material-icons.expand-collapse {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
 }
