@@ -71,8 +71,10 @@ $(document).ready(function(){
     }
     if ( $('.week-month').hasClass('toggled') ) {
       $('.calendar').addClass('month').removeClass('week');
+      console.log('this worked 1');
     } else {
       $('.calendar').addClass('week').removeClass('month');
+      console.log('this worked 2');
     }
   });
 });
