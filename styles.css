@@ -24,3 +24,10 @@ h3 {
   font-weight: 500;
   display: inline-block;
 }
+.panel {
+  background-color: #26435F;
+  border-radius: 10px;
+}
+.panel.selected {
+  border: 2px solid #DA83FF;
+}
