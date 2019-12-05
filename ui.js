@@ -1,5 +1,8 @@
-$('#day-night-toggle').click(function () {
-  console.log("clicked me!");
+$(document).ready(function(){
+  $('#day-night-toggle').click(function () {
+    console.log("clicked me!");
+  });
+});
 //  var page = $(html);
 //  if (page.hasClass('night') {
 //    page.removeClass('night');
@@ -9,7 +12,7 @@ $('#day-night-toggle').click(function () {
 //    page.addClass('night');
 //    $('#day-mode').removeClass('invisible');
 //    $('#night-mode').addClass('invisible');
-});
+
 
 
 //.getAttribute('aria-checked') === 'true') {
