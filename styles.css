@@ -35,3 +35,7 @@ h3 {
 .panel.selected {
   border: 2px solid #DA83FF;
 }
+.panel.special {
+  background-color: #40C8C2;
+  color: #ffffff;
+}
