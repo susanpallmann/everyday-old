@@ -94,6 +94,7 @@ dark .panel.special i.material-icons {
 }
 i.material-icons {
   vertical-align: middle;
+  margin-right: 5px;
 }
 i.material-icons::selection {
   background: transparent;
