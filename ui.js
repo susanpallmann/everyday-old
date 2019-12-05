@@ -70,11 +70,9 @@ $(document).ready(function(){
       $(this).attr('aria-checked','false');
     }
     if ( weekMonthOptions.hasClass('toggled') ) {
-      $('.calendar.week').addClass('month');
-      $('.calendar.month').removeClass('week');
+      $('.calendar').addClass('month').removeClass('week');
     } else {
-      $('.calendar.month').addClass('week');
-      $('.calendar.week').removeClass('month');
+      $('.calendar').addClass('week').removeClass('month');
     }
   });
 });
