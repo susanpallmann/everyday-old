@@ -69,7 +69,7 @@ $(document).ready(function(){
       $(this).removeClass('toggled');
       $(this).attr('aria-checked','false');
     }
-    if ( weekMonthOptions.hasClass('toggled') ) {
+    if ( $('.week-month').hasClass('toggled') ) {
       $('.calendar').addClass('month').removeClass('week');
     } else {
       $('.calendar').addClass('week').removeClass('month');
