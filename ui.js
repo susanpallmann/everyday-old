@@ -57,19 +57,19 @@ $(document).ready(function(){
     if ( $('.week-month').attr('aria-checked') === 'false' ) {
       $('.calendar').addClass('week').removeClass('month');
       weekMonthOptions.each(function(index){
-        $(this).removeClass('toggled');
-        $(this).attr('aria-checked','false');
-      });
-      $(this).addClass('toggled');
-      $(this).attr('aria-checked','true');
-    } else {
-      $('.calendar').addClass('month').removeClass('week');
-      weekMonthOptions.each(function(index){
         $(this).addClass('toggled');
         $(this).attr('aria-checked','true');
       });
       $(this).removeClass('toggled');
       $(this).attr('aria-checked','false');
+    } else {
+      $('.calendar').addClass('month').removeClass('week');
+      weekMonthOptions.each(function(index){
+        $(this).removeClass('toggled');
+        $(this).attr('aria-checked','false');
+      });
+      $(this).addClass('toggled');
+      $(this).attr('aria-checked','true');
     }
   });
 });
