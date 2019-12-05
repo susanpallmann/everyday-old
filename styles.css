@@ -62,6 +62,12 @@ h3 {
 }
 .panel.selected {
   border: 2px solid #EE559C;
+  transition-property: border;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: border;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .night .panel.selected {
   border: 2px solid #DA83FF;
