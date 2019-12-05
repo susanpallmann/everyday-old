@@ -57,13 +57,13 @@ $(document).ready(function(){
     if ( $(this).attr('aria-checked') === 'false' ) {
       var i;
       for ( i=0; i < weekMonthOptions.length; i++ ) {
-        [i].removeClass('toggled');
+        weekMonthOptions[i].removeClass('toggled');
       }
       $(this).addClass('toggled');
     } else {
       var i;
       for ( i=0; i < weekMonthOptions.length; i++ ) {
-        [i].addClass('toggled');
+        weekMonthOptions[i].addClass('toggled');
       }
       $(this).removeClass('toggled');
     }
