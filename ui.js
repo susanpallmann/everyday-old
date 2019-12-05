@@ -15,4 +15,17 @@ $(document).ready(function(){
       $('#night-mode').css('display', 'none');
     }
   });
+  $('.expand-collapse').click(function () {
+    var expandCollapse = $(this);
+    var thisPanel = $(this).parent();
+    if (expandCollapse.attr('aria-checked') === 'true') {
+      expandCollapse.attr('aria-checked','false');
+      $(thisPanel).children('p').removeClass('collapsed');
+      expandCollapse.html("add-circle");
+    } else {
+      expandCollapse.attr('aria-checked','true');
+      $(thisPanel).children('p').addClass('collapsed');
+      expandCollapse.html("remove-circle");
+    }
+  });
 });
