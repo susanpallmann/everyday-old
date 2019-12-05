@@ -4,6 +4,8 @@
 <title>everyday app</title>
 </head>
 <body>
+     
+     <h1 id="bigOne"></h1>
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -25,6 +27,10 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+     
+     var bigOne = document.getElementById ('bigOne'); 
+     var dbRef = firebase.database().ref().child('text'); 
+     dbRef.on('value', snap => bigOne.innerText = snap.val());
 </script>
 </body>
 </html>
