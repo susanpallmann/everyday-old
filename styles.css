@@ -56,6 +56,8 @@ h3 {
   color: #707C88;
   font-weight: 500;
   margin: 10px;
+  width: 300px;
+  vertical-align: top;
 }
 .night .panel {
   background-color: #26435F;
