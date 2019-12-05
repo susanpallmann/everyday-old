@@ -41,6 +41,7 @@ $(document).ready(function(){
   var firstWeekday = firstDay.getDay() + 1;
   var month = $('.month');
   month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
+  month.children('.day:nth-child(' + (firstWeekday + numDays) + ')').css('background-color','#40C8C2');
 });
   function monthToString(val) {
     var number = val;
