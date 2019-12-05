@@ -137,6 +137,9 @@ h4 {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
+.week .day:nth-child(n+8) {
+  display: none;
+}
 .month .day.first {
   background-color: #40C8C2;
 }
