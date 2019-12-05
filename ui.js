@@ -21,11 +21,11 @@ $(document).ready(function(){
     if (expandCollapse.attr('aria-checked') === 'true') {
       expandCollapse.attr('aria-checked','false');
       $(thisPanel).children('p').removeClass('collapsed');
-      expandCollapse.html("add_circle");
+      expandCollapse.html("remove_circle");
     } else {
       expandCollapse.attr('aria-checked','true');
       $(thisPanel).children('p').addClass('collapsed');
-      expandCollapse.html("remove_circle");
+      expandCollapse.html("add_circle");
     }
   });
 });
