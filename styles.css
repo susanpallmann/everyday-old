@@ -115,6 +115,6 @@ i.material-icons::selection {
   margin-right: -8px;
   color: rgba(38, 67, 95, 0.2);
 }
-.night .panel i.material-icons.expand-collapse, .night .panel i.material-icons.special.expand-collapse {
+.night .panel i.material-icons.expand-collapse, .panel i.material-icons.special.expand-collapse {
   color: rgba(255, 255, 255, 0.2);
 }
