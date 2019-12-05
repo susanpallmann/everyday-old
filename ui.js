@@ -39,11 +39,11 @@ $(document).ready(function(){
   var numDays = firstDay + new Date(nextMonthStart - 1).getDate();
   var todayModified = firstDay + currentDay;
   
-  $('.month').children('.day:nth-child(' + (firstDay + 1) + ')').css('background-color','#40C8C2');
-  $('.month').children('.day:nth-child(-n+' + firstDay + ')').css('background-color','#152C42');
-  $('.month').children('.day:nth-child(' + numDays + ')').css('background-color','#40C8C2');
-  $('.month').children('.day:nth-child(n+' + (numDays + 1) + ')').css('background-color','#152C42');
-  $('.month').children('.day:nth-child(' + todayModified + ')').css('background-color','#DA83FF');
+  $('.month').children('.day:nth-child(' + (firstDay + 1) + ')').addClass('first');
+  $('.month').children('.day:nth-child(-n+' + firstDay + ')').addClass('ineligible');
+  $('.month').children('.day:nth-child(' + numDays + ')').addClass('last');
+  $('.month').children('.day:nth-child(n+' + (numDays + 1) + ')').addClass('ineligible');
+  $('.month').children('.day:nth-child(' + todayModified + ')').addClass('today');
 });
 
 function getNextMonth(val) {
