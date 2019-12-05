@@ -1,0 +1,142 @@
+/*'Discount Bootstrap' Responsive Grid (Mobile First)*/
+.container {
+  max-width: 1000px;
+  margin:auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .row:nth-child(1) {
+  margin-top: 60px;
+}
+main .row:nth-last-child(1) {
+  margin-bottom: 60px;
+}
+.column {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.column.hybridRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column.span8.static {
+  width: 66.67%;
+}
+.column.span4.static {
+  width: 33.33%;
+}
+/*'Discount Bootstrap' Responsive Grid Media Queries*/
+/*Vertical Mobile*/
+@media only screen and (max-width: 600px) {
+}
+/*Horizontal Mobile & Tablets*/
+@media only screen and (min-width: 601px) and (max-width:1000px) {
+  .column {
+    width: 100%;
+  }
+  .span1 {
+    width: 8.33%;
+  }
+  .span2 {
+    width: 16.66%;
+  }
+  .span3 {
+    width: 25%;
+  }
+  .span4 {
+    width: 33.33%
+  }
+  .span5 {
+    width: 41.66%
+  }
+  .span6 {
+    width: 50%;
+  }
+  .span7 {
+    width: 58.34%;
+  }
+  .span8 {
+    width: 66.67%;
+  }
+  .span9 {
+    width: 75%;
+  }
+  .span10 {
+    width: 83.34%;
+  }
+  .span11 {
+    width: 91.67%;
+  }
+  .span12 {
+    width: 100%;
+  }
+  .spacer {
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .column.span8.static {
+    width: 66.67%;
+  }
+  .column.span4.static {
+    width: 33.33%;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 1001px) {
+  .column {
+    width: 100%;
+  }
+  .span1 {
+    width: 8.33%;
+  }
+  .span2 {
+    width: 16.66%;
+  }
+  .span3 {
+    width: 25%;
+  }
+  .span4 {
+    width: 33.33%
+  }
+  .span5 {
+    width: 41.66%
+  }
+  .span6 {
+    width: 50%;
+  }
+  .span7 {
+    width: 58.34%;
+  }
+  .span8 {
+    width: 66.67%;
+  }
+  .span9 {
+    width: 75%;
+  }
+  .span10 {
+    width: 83.34%;
+  }
+  .span11 {
+    width: 91.67%;
+  }
+  .span12 {
+    width: 100%;
+  }
+  .spacer {
+    padding-right: 8.33%;
+    box-sizing: border-box;
+  }
+  .column.span8.static {
+    width: 66.67%;
+  }
+  .column.span4.static {
+    width: 33.33%;
+  }
+  p, h4, h3, h2, #project-meta h2, h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
