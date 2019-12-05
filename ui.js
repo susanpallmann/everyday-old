@@ -53,10 +53,18 @@ $(document).ready(function(){
     }
   });
   $('.week-month').click(function () {
+    var weekMonthOptions = $('.week-month');
     if ( $(this).attr('aria-checked') === 'false' ) {
-      
+      for ( i=0, i < weekMonthOptions.length, i++ ) {
+        [i].removeClass('toggled');
+      }
+      $(this).addClass('toggled');
     } else {
-      $('.week-month').addClass('toggled');
+      if ( $(this).attr('aria-checked') === 'false' ) {
+      for ( i=0, i < weekMonthOptions.length, i++ ) {
+        [i].addClass('toggled');
+      }
+      $(this).removeClass('toggled');
     }
   });
 });
