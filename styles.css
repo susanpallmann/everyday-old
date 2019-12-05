@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   color: #DA83FF;
 }
+p {
+  margin-top: 0px;
+}
 p, h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
 }
@@ -23,6 +26,9 @@ h3 {
   text-transform: lowercase;
   font-weight: 500;
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
 }
 .panel {
   background-color: #26435F;
