@@ -39,8 +39,8 @@ $(document).ready(function(){
   var numDays = new Date(nextMonthStart - 1);
   var firstDay = new Date(currentYear, currentMonth, 1);
   var firstWeekday = firstDay.getDay() + 1;
-  var firstWeek = $('.week1');
-  firstWeek.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
+  var month = $('.month');
+  month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
 });
   function monthToString(val) {
     var number = val;
