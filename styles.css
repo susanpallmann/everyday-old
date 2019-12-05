@@ -90,7 +90,7 @@ h4 {
 }
 .week {
   max-width: 350px;
-  height: 710px;
+  height: 730px;
   display: block;
   margin: auto;
 }
@@ -140,35 +140,35 @@ h4 {
 .week .day:nth-child(n+8) {
   display: none;
 }
-.month .day.first {
+.month .day.first, .week .day.first {
   background-color: #40C8C2;
 }
-.night .month .day.first {
+.night .month .day.first, .night .week .day.first {
   background-color: #40C8C2;
 }
-.month .day.last {
+.month .day.last, .week .day.last {
   background-color: #40C8C2;
 }
-.night .month .day.last {
+.night .month .day.last, .night .week .day.last {
   background-color: #40C8C2;
 }
-.month .day.ineligible {
+.month .day.ineligible, .week .day.ineligible {
   background-color: #F0F0F0;
   cursor: auto;
 }
-.night .month .day.ineligible {
+.night .month .day.ineligible, .night .week .day.ineligible {
   background-color: #102438;
 }
-.month .day.today {
+.month .day.today, .week .day.today {
   background-color: #EE559C;
 }
-.night .month .day.today {
+.night .month .day.today, .night .week .day.today {
   background-color: #DA83FF;
 }
-.month .day.selected {
+.month .day.selected, .week .day.selected {
   border: 3px solid rgba(38, 67, 95, 1);
 }
-.night .month .day.selected {
+.night .month .day.selected, .night .week .day.selected {
   border: 3px solid rgba(255, 255, 255, 1);
 }
 @media only screen and (max-width: 350px) {
