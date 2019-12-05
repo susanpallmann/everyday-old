@@ -54,7 +54,7 @@ $(document).ready(function(){
   });
   $('.week-month').click(function () {
     var weekMonthOptions = $('.week-month');
-    if ( $('.week-month').attr('aria-checked') === 'false' ) {
+    if ( weekMonthOptions[0].attr('aria-checked') === 'false' ) {
       $('.calendar').addClass('week').removeClass('month');
       weekMonthOptions.each(function(index){
         $(this).addClass('toggled');
