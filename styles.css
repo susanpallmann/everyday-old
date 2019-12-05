@@ -138,6 +138,7 @@ i.material-icons::selection {
 }
 footer p {
   text-align: center;
+  margin-left: 0px;
 }
 /*Vertical Mobile*/
 @media only screen and (max-width: 600px) {
