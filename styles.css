@@ -58,10 +58,10 @@ h3 {
   margin: 10px;
   width: 300px;
   vertical-align: top;
-  transition-property: height;
+  transition-property: scaleY;
   transition-duration: .2s;
   transition-timing-function: linear;
-  -webkit-transition-property: height;
+  -webkit-transition-property: scaleY;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
