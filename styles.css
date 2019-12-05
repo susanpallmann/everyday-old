@@ -2,6 +2,7 @@ body {
   background-color: #F0F0F0;
   color: #102438;
   font-family: "raleway", sans-serif;
+  margin: 0;
 }
 body.night {
   background-color: #102438;
@@ -66,6 +67,11 @@ h3 {
   font-weight: 500;
   max-width: 300px;
   margin: 20px auto 20px auto;  
+}
+@media only screen and (max-width: 300px) {
+  .panel {
+    margin: 20px;
+  }
 }
 .night .panel {
   background-color: #26435F;
