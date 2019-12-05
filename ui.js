@@ -44,8 +44,15 @@ $(document).ready(function(){
   $('.month').children('.day:nth-child(' + numDays + ')').addClass('last');
   $('.month').children('.day:nth-child(n+' + (numDays + 1) + ')').addClass('ineligible');
   $('.month').children('.day:nth-child(' + todayModified + ')').addClass('today');
+  
+  $('.month .day').click(function () {
+    if (this.hasClass('ineligible')) {
+    } else {
+      $('.month .day.selected').removeClass('selected');
+      $(this).addClass('selected');
+    }
+  }
 });
-
 function getNextMonth(val) {
   var number = val;
   var nextMonth;
