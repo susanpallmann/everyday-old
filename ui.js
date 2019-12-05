@@ -32,12 +32,29 @@ $(document).ready(function(){
   var today = new Date();
   var currentDay = today.getDate();
   var currentMonth = today.getMonth();
+  var nextMonth = getNextMonth();
   var currentYear = today.getFullYear();
   var monthString = monthToString(currentMonth);
+  var nextMonthStart = new Date(currentYear, nextMonth,1);
+  var numDays = new Date(nextMonthStart - 1);
+  var firstDay = new Date(currentYear, currentMonth, 1);
+  var firstWeekday = firstDay.getDay() + 1;
+  var calendar = $('.calendar');
+  calendar.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
+});
   function monthToString(val) {
     var number = val;
     var allMonths = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var monthString = allMonths[number];
-    console.log(number + ' ' + monthString);
+    return monthString;
   }
-});
+function getNextMonth(val) {
+  var number = val;
+  var nextMonth;
+  if (number = 11) {
+    nextMonth = 0;
+  } else {
+    nextMonth = number ++;
+  }
+  return nextMonth;
+}
