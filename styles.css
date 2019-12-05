@@ -160,7 +160,6 @@ footer p {
   -webkit-transition-property: border;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
-  margin-bottom: 4px;
 }
 .month .day {
   width: 13%;
@@ -190,6 +189,7 @@ footer p {
   display: inline-block;
   cursor: pointer;
   border: 3px solid rgba(0, 0, 0, 0);
+  margin-bottom: 4px;
 }
 .month .day h4 {
   display: none;
