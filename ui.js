@@ -56,13 +56,13 @@ $(document).ready(function(){
     var weekMonthOptions = $('.week-month');
     if ( $(this).attr('aria-checked') === 'false' ) {
       var i;
-      for ( i=0, i < weekMonthOptions.length, i++ ) {
+      for ( i=0; i < weekMonthOptions.length; i++ ) {
         [i].removeClass('toggled');
       }
       $(this).addClass('toggled');
     } else {
       var i;
-      for ( i=0, i < weekMonthOptions.length, i++ ) {
+      for ( i=0; i < weekMonthOptions.length; i++ ) {
         [i].addClass('toggled');
       }
       $(this).removeClass('toggled');
