@@ -70,11 +70,9 @@ $(document).ready(function(){
       $(this).attr('aria-checked','false');
     }
     if ( $('.week-month').attr('aria-checked') === 'false' ) {
-      $('.calendar').addClass('month').removeClass('week');
-      console.log('this worked 1');
-    } else {
       $('.calendar').addClass('week').removeClass('month');
-      console.log('this worked 2');
+    } else {
+      $('.calendar').addClass('month').removeClass('week');
     }
   });
 });
