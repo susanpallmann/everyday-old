@@ -55,17 +55,15 @@ $(document).ready(function(){
   $('.week-month').click(function () {
     var weekMonthOptions = $('.week-month');
     if ( $(this).attr('aria-checked') === 'false' ) {
-      var i;
-      for ( i=0; i < weekMonthOptions.length; i++ ) {
-        weekMonthOptions[i].removeClass('toggled');
-      }
-      $(this).addClass('toggled');
+       weekMonthOptions.each(function(index){
+         $(this).removeClass('toggled');
+       }
+       $(this).addClass('toggled');
     } else {
-      var i;
-      for ( i=0; i < weekMonthOptions.length; i++ ) {
-        weekMonthOptions[i].addClass('toggled');
-      }
-      $(this).removeClass('toggled');
+      weekMonthOptions.each(function(index){
+         $(this).addClass('toggled');
+       }
+       $(this).removeClass('toggled');
     }
   });
 });
