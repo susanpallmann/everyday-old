@@ -104,3 +104,6 @@ i.material-icons {
 i.material-icons::selection {
   background: transparent;
 }
+.collapsed {
+  display: none;
+}
