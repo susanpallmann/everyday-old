@@ -94,7 +94,7 @@ h3 {
 }
 i.material-icons {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 0.25em;
 }
 i.material-icons::selection {
   background: transparent;
