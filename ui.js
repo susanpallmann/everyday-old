@@ -6,13 +6,13 @@ $(document).ready(function(){
     if (dayNightToggle.attr('aria-checked') === 'false') {
       page.addClass('night');
       dayNightToggle.attr('aria-checked','true');
-      $('#day-mode').addClass('invisible');
-      $('#night-mode').removeClass('invisible');
+      $('#day-mode').css('display', 'none');
+      $('#night-mode').css('display', 'inline-block');
     } else {
       page.removeClass('night');
       dayNightToggle.attr('aria-checked','false');
-      $('#day-mode').removeClass('invisible');
-      $('#night-mode').addClass('invisible');
+      $('#day-mode').css('display', 'inline-block');
+      $('#night-mode').css('display', 'none');
     }
   });
 });
