@@ -249,6 +249,7 @@ i.material-icons.week-month {
   -webkit-transition-property: opacity;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
+  cursor: pointer;
 }
 i.material-icons.week-month.toggled {
   opacity: 1;
