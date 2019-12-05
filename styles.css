@@ -83,13 +83,13 @@ h3 {
 .panel i.material-icons {
   color: #26435F;
 }
-dark .panel i.material-icons {
+.dark .panel i.material-icons {
   color: color: #FFFFFF;
 }
 .panel.special i.material-icons {
   color: #FFFFFF;
 }
-dark .panel.special i.material-icons {
+.dark .panel.special i.material-icons {
   color: color: #FFFFFF;
 }
 i.material-icons {
