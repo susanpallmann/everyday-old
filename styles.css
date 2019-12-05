@@ -2,6 +2,12 @@ body {
   background-color: #F0F0F0;
   color: #102438;
   font-family: "raleway", sans-serif;
+  transition-property: color, background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 body.night {
   background-color: #102438;
@@ -36,6 +42,10 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.3em;
+  color: #26435F;
+}
+.night h3 {
+  color: #FFFFFF;
 }
 .panel {
   background-color: #FFFFFF;
