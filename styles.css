@@ -136,7 +136,7 @@ h4 {
   background-color: #DA83FF;
 }
 .month .day.selected {
-  border: 3px solid rgba(16, 36, 56, 1);
+  border: 3px solid rgba(38, 67, 95, 1);
 }
 .night .month .day.selected {
   border: 3px solid rgba(255, 255, 255, 1);
