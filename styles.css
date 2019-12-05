@@ -169,9 +169,9 @@ footer p {
   }
 }
 div.day {
-  width: 14%;
-  padding-top: 100%;
-  color: #26435F;
+  width: 50px;
+  padding-top: 50px;
+  background-color: #26435F;
   box-sizing: border-box;
-  margin: 2px;
+  margin: 1px;
 }
