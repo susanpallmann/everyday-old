@@ -94,6 +94,18 @@ h4 {
   box-sizing: border-box;
   display: inline-block;
 }
+.day.first {
+  background-color: #40C8C2;
+}
+.day.last {
+  background-color: #40C8C2;
+}
+.day.ineligible {
+  background-color: #152C42;
+}
+.day.today {
+  background-color: #DA83FF;
+}
 .night .month .day {
   background-color: #26435F;
 }
