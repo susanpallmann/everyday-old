@@ -102,6 +102,7 @@ h4 {
   box-sizing: border-box;
   display: inline-block;
   cursor: pointer;
+  border: 3px solid rgba(0, 0, 0, 0);
   transition-property: border;
   transition-duration: .2s;
   transition-timing-function: linear;
@@ -135,10 +136,10 @@ h4 {
   background-color: #DA83FF;
 }
 .month .day.selected {
-  border: 3px solid #FFF;
+  border: 3px solid rgba(16, 36, 56, 1);
 }
 .night .month .day.selected {
-  border: 3px solid #FFF;
+  border: 3px solid rgba(255, 255, 255, 1);
 }
 .night .month .day {
   background-color: #26435F;
