@@ -26,10 +26,10 @@ a {
 }
 p {
   margin-top: 0px;
-  transition-property: transform;
+  transition-property: opacity;
   transition-duration: .2s;
   transition-timing-function: linear;
-  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-property: opacity;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
   transform-origin: 0% 0%;
@@ -112,7 +112,7 @@ i.material-icons::selection {
   background: transparent;
 }
 .collapsed {
-  transform: scale(0);
+  opacity: 0;
 }
 .panel i.material-icons.expand-collapse {
   font-size: 18px;
