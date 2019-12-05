@@ -174,4 +174,5 @@ div.day {
   background-color: #26435F;
   box-sizing: border-box;
   margin: 1px;
+  display: inline-block;
 }
