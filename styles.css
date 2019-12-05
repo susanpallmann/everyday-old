@@ -84,6 +84,14 @@ h4 {
   display: block;
   margin: auto;
 }
+.day {
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
+}
 .month .week {
   display: inline;
 }
