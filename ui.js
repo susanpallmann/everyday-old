@@ -53,7 +53,7 @@ $(document).ready(function(){
     }
   });
   $('.week-month').click(function () {
-    if ( $(this).attr('aria-checked') === 'false') ) {
+    if ( $(this).attr('aria-checked') === 'false' ) {
       
     } else {
       $('.week-month').addClass('toggled');
