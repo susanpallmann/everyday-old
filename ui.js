@@ -3,14 +3,14 @@ $(document).ready(function(){
     console.log("clicked me!");
     var page = $(document);
     var dayNightToggle = $('#day-night-toggle');
-    if (dayNightToggle.getAttribute('aria-checked') === 'false') {
+    if (dayNightToggle.attr('aria-checked') === 'false') {
       page.addClass('night');
-      dayNightToggle.setAttribute('aria-checked') === 'true';
+      dayNightToggle.attr('aria-checked') === 'true';
       $('#day-mode').addClass('invisible');
       $('#night-mode').removeClass('invisible');
     } else {
       page.removeClass('night');
-      dayNightToggle.setAttribute('aria-checked') === 'false';
+      dayNightToggle.attr('aria-checked') === 'false';
       $('#day-mode').removeClass('invisible');
       $('#night-mode').addClass('invisible');
     }
