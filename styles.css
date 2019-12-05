@@ -40,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 500;
   font-size: 3em;
-  font-align: center;
+  text-align: center;
 }
 h3 {
   text-transform: lowercase;
