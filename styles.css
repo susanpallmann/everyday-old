@@ -84,6 +84,9 @@ h4 {
   display: block;
   margin: auto;
 }
+.month .week {
+  display: inline;
+}
 .month .day {
   width: 13%;
   height: 18.5%;
