@@ -69,6 +69,13 @@ $(document).ready(function(){
       $(this).removeClass('toggled');
       $(this).attr('aria-checked','false');
     }
+    if ( weekMonthOptions.hasClass('toggled') ) {
+      $('.calendar.week').addClass('month');
+      $('.calendar.month').removeClass('week');
+    } else {
+      $('.calendar.month').addClass('week');
+      $('.calendar.week').removeClass('month');
+    }
   });
 });
 function getNextMonth(val) {
