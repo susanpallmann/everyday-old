@@ -79,3 +79,6 @@ h3 {
 .panel.special h3 {
   color: #ffffff;
 }
+i.material-icons::selection {
+  background: transparent;
+}
