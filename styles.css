@@ -26,6 +26,12 @@ a {
 }
 p {
   margin-top: 0px;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 p, h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
@@ -58,12 +64,6 @@ h3 {
   margin: 10px;
   width: 300px;
   vertical-align: top;
-  transition-property: scaleY;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: scaleY;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
 }
 .night .panel {
   background-color: #26435F;
@@ -112,4 +112,5 @@ i.material-icons::selection {
 }
 .collapsed {
   display: none;
+  transform: scaleY(0);
 }
