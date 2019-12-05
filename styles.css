@@ -90,7 +90,6 @@ h4 {
   box-sizing: border-box;
   display: inline-block;
 }
-
 @media only screen and (max-width: 350px) {
   .panel, h4, .month {
     margin: 20px;
