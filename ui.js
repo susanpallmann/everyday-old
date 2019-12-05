@@ -1,4 +1,4 @@
-$('#day-night-toggle').click(function dayNightToggle () {
+$('#day-night-toggle').click(function () {
   console.log("clicked me!");
 //  var page = $(html);
 //  if (page.hasClass('night') {
