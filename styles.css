@@ -79,14 +79,15 @@ h4 {
 }
 .month {
   max-width: 350px;
-  max-height: 250px;
+  height: 250px;
+  display: block;
+  margin: auto;
 }
 .day {
-  max-width: 14.28%;
-  max-height: 20%;
+  max-width: 13.2%;
+  height: 20%;
   background-color: #26435F;
   box-sizing: border-box;
-  margin: 1px;
   display: inline-block;
 }
 
