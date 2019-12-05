@@ -80,6 +80,18 @@ h3 {
 .panel.special h3 {
   color: #ffffff;
 }
+.panel i.material-icons {
+  color: #26435F;
+}
+dark .panel i.material-icons {
+  color: color: #FFFFFF;
+}
+.panel.special i.material-icons {
+  color: #FFFFFF;
+}
+dark .panel.special i.material-icons {
+  color: color: #FFFFFF;
+}
 i.material-icons {
   vertical-align: middle;
 }
