@@ -90,9 +90,12 @@ h4 {
 .month .day {
   width: 13%;
   height: 18.5%;
-  background-color: #26435F;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   display: inline-block;
+}
+.night .month .day {
+  background-color: #26435F;
 }
 @media only screen and (max-width: 350px) {
   .panel, h4, .month {
