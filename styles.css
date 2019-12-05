@@ -46,3 +46,12 @@ h3 {
   background-color: #40C8C2;
   color: #ffffff;
 }
+i.material-icons {
+  color: #dddddd;
+}
+.panel i.material-icons {
+  color: #BDC6CF;
+}
+.panel.special i.material-icons {
+  color: #ffffff;
+}
