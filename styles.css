@@ -61,6 +61,9 @@ h3 {
   background-color: #26435F;
   color: #BDC6CF;
 }
+.panel p, .panel h3 {
+  margin-left: 0px;
+}
 .panel.selected {
   border: 2px solid #EE559C;
   transition-property: border;
