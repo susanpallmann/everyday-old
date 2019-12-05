@@ -31,6 +31,7 @@ h3 {
   display: inline-block;
   font-size: 0.8em;
   color: #BDC6CF;
+  font-weight: 500;
 }
 .panel.selected {
   border: 2px solid #DA83FF;
