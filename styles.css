@@ -136,12 +136,13 @@ h4 {
   -webkit-transition-property: border;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
+  margin-bottom: 4px;
 }
 .month .day h4 {
   display: none;
 }
 .week .day h4 {
-  margin: 20px 20px 0 0;
+  margin: 20px 0 0 20px;
 }
 .week .day:nth-child(n+8) {
   display: none;
