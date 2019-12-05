@@ -137,6 +137,12 @@ h4 {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
+.month .day h4 {
+  display: none;
+}
+.week .day h4 {
+  margin: 20px 20px 0 0;
+}
 .week .day:nth-child(n+8) {
   display: none;
 }
