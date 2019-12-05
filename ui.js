@@ -1,23 +1,31 @@
+//When page is ready, start event listeners
 $(document).ready(function(){
+  //Toggles day/night mode
+  //When the user clicks on the day/night mode toggle
   $('#day-night-toggle').click(function () {
-    console.log("clicked me!");
     var page = $(document.body);
     var dayNightToggle = $('#day-night-toggle');
+    //If the page was not in night mode
     if (dayNightToggle.attr('aria-checked') === 'false') {
+      //Activate night mode
       page.addClass('night');
       dayNightToggle.attr('aria-checked','true');
       $('#day-mode').css('display', 'none');
       $('#night-mode').css('display', 'inline-block');
     } else {
+      //Otherwise, deactivate night mode
       page.removeClass('night');
       dayNightToggle.attr('aria-checked','false');
       $('#day-mode').css('display', 'inline-block');
       $('#night-mode').css('display', 'none');
     }
   });
+  //Expands or collapses panels with this switch in them
+  //When the user clicks on an expand/collapse toggle
   $('.expand-collapse').click(function () {
     var expandCollapse = $(this);
     var thisPanel = $(this).parent();
+    //jQuery
     $(thisPanel).children('p').slideToggle( "fast" );
     if (expandCollapse.attr('aria-checked') === 'true') {
       expandCollapse.attr('aria-checked','false');
