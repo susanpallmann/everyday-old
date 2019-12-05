@@ -127,3 +127,6 @@ i.material-icons::selection {
 .panel.special i.material-icons.expand-collapse, .night .panel.special i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.4);
 }
+#day-night-toggle {
+  float: right;
+}
