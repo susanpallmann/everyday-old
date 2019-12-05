@@ -18,13 +18,12 @@ $(document).ready(function(){
   $('.expand-collapse').click(function () {
     var expandCollapse = $(this);
     var thisPanel = $(this).parent();
+    $(thisPanel).children('p').slideToggle( "fast" );
     if (expandCollapse.attr('aria-checked') === 'true') {
       expandCollapse.attr('aria-checked','false');
-      $(thisPanel).children('p').removeClass('collapsed');
       expandCollapse.html("remove_circle");
     } else {
       expandCollapse.attr('aria-checked','true');
-      $(thisPanel).children('p').addClass('collapsed');
       expandCollapse.html("add_circle");
     }
   });
