@@ -28,6 +28,7 @@ h3 {
   background-color: #26435F;
   border-radius: 10px;
   padding: 20px;
+  display: inline-block;
 }
 .panel.selected {
   border: 2px solid #DA83FF;
