@@ -55,12 +55,13 @@ $(document).ready(function(){
   $('.week-month').click(function () {
     var weekMonthOptions = $('.week-month');
     if ( $(this).attr('aria-checked') === 'false' ) {
+      var i;
       for ( i=0, i < weekMonthOptions.length, i++ ) {
         [i].removeClass('toggled');
       }
       $(this).addClass('toggled');
     } else {
-      if ( $(this).attr('aria-checked') === 'false' ) {
+      var i;
       for ( i=0, i < weekMonthOptions.length, i++ ) {
         [i].addClass('toggled');
       }
