@@ -56,19 +56,19 @@ $(document).ready(function(){
     var weekMonthOptions = [];
     console.log('this worked 1');
     weekMonthOptions = $('.week-month');
-    if ( $('week-month:nth-child(1)').attr('aria-checked') === 'false' ) {
+    if ( $('.week-month:nth-child(1)').attr('aria-checked') === 'false' ) {
       $('.calendar').addClass('week').removeClass('month');
-      $('week-month:nth-child(1)').addClass('toggled');
-      $('week-month:nth-child(1)').attr('aria-checked','true');
-      $('week-month:nth-child(2)').removeClass('toggled');
-      $('week-month:nth-child(2)').attr('aria-checked','false');
+      $('.week-month:nth-child(1)').addClass('toggled');
+      $('.week-month:nth-child(1)').attr('aria-checked','true');
+      $('.week-month:nth-child(2)').removeClass('toggled');
+      $('.week-month:nth-child(2)').attr('aria-checked','false');
       console.log('this worked 2');
     } else {
       $('.calendar').addClass('month').removeClass('week');
-      $('week-month:nth-child(1)').removeClass('toggled');
-      $('week-month:nth-child(1)').attr('aria-checked','false');
-      $('week-month:nth-child(2)').addClass('toggled');
-      $('week-month:nth-child(2)').attr('aria-checked','true');
+      $('.week-month:nth-child(1)').removeClass('toggled');
+      $('.week-month:nth-child(1)').attr('aria-checked','false');
+      $('.week-month:nth-child(2)').addClass('toggled');
+      $('.week-month:nth-child(2)').attr('aria-checked','true');
       console.log('this worked 3');
     }
   });
