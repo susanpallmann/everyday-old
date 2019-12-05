@@ -101,6 +101,7 @@ h4 {
   background-color: #FFFFFF;
   box-sizing: border-box;
   display: inline-block;
+  cursor: pointer;
 }
 .month .day.first {
   background-color: #40C8C2;
@@ -116,6 +117,7 @@ h4 {
 }
 .month .day.ineligible {
   background-color: #F0F0F0;
+  cursor: auto;
 }
 .night .month .day.ineligible {
   background-color: #102438;
