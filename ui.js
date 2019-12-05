@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#day-night-toggle').click(function () {
     console.log("clicked me!");
-    var page = $(html);
+    var page = $(body);
     var dayNightToggle = $('#day-night-toggle');
     if (dayNightToggle.attr('aria-checked') === 'false') {
       page.addClass('night');
