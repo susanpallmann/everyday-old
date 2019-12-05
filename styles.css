@@ -47,11 +47,6 @@ h3 {
   color: #ffffff;
 }
 i.material-icons {
-  color: #dddddd;
-}
-.panel i.material-icons {
-  color: #BDC6CF;
-}
-.panel.special i.material-icons {
-  color: #ffffff;
+  margin-top: 10px;
+  margin-right: 10px;
 }
