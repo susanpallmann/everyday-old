@@ -94,28 +94,28 @@ h4 {
   box-sizing: border-box;
   display: inline-block;
 }
-.day.first {
+.month .day.first {
   background-color: #40C8C2;
 }
-.night .day.first {
+.night .month .day.first {
   background-color: #40C8C2;
 }
-.day.last {
+.month .day.last {
   background-color: #40C8C2;
 }
-.night .day.last {
+.night .month .day.last {
   background-color: #40C8C2;
 }
-.day.ineligible {
+.month .day.ineligible {
   background-color: #F0F0F0;
 }
-.night .day.ineligible {
+.night .month .day.ineligible {
   background-color: #102438;
 }
-.day.today {
+.month .day.today {
   background-color: #EE559C;
 }
-.night .day.today {
+.night .month .day.today {
   background-color: #DA83FF;
 }
 .night .month .day {
