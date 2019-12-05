@@ -26,6 +26,12 @@ a {
 }
 p {
   margin-top: 0px;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 p, h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
@@ -105,8 +111,7 @@ i.material-icons::selection {
   background: transparent;
 }
 .collapsed {
-  display: none;
-  transform: scaleY(0);
+  transform: scale(0);
 }
 .panel i.material-icons.expand-collapse {
   font-size: 18px;
