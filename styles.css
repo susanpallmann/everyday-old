@@ -1,29 +1,47 @@
+/* Day/Night Mode Styling */
 body {
   background-color: #F0F0F0;
   color: #102438;
-  font-family: "raleway", sans-serif;
-  margin: 0;
 }
 body.night {
   background-color: #102438;
   color: #DDDDDD;
 }
+a {
+  color: #EE559C;
+}
+.night a {
+  color: #DA83FF;
+}
+h3 {
+  color: #26435F;
+}
+.night h3 {
+  color: #FFFFFF;
+}
+.panel {
+  background-color: #FFFFFF;
+  color: #707C88;
+}
+.night .panel {
+  background-color: #26435F;
+  color: #BDC6CF;
+}
+.panel.selected {
+  border: 2px solid #EE559C;
+}
+.night .panel.selected {
+  border: 2px solid #DA83FF;
+}
+
+/* General Styles */
+body {
+  font-family: "raleway", sans-serif;
+  margin: 0;
+}
 span.emphasis {
   color: #40C8C2;
   font-weight: 600;
-}
-a {
-  text-decoration: none;
-  color: #EE559C;
-  transition-property: color;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
-}
-.night a {
-  color: #DA83FF
 }
 p {
   margin-top: 0px;
@@ -62,26 +80,67 @@ h4 {
   display: block;
   margin: 20px auto 20px auto;
 }
+a {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
+}
 .small-container {
   display: block;
   max-width: 350px;
   margin: auto;
 }
-.night h3 {
-  color: #FFFFFF;
+footer p {
+  text-align: center;
+  margin-left: 0px;
 }
+
+/* Panels */
 .panel {
-  background-color: #FFFFFF;
   border-radius: 10px;
   padding: 5px 20px;
   display: block;
   font-size: 0.8em;
-  color: #707C88;
   font-weight: 500;
   max-width: 350px;
   margin: 20px auto 20px auto;
   box-sizing: border-box;
 }
+.panel p, .panel h3 {
+  margin-left: 0px;
+  text-align: left;
+  width: auto;
+}
+.panel.selected {
+  transition-property: border;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: border;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
+}
+.panel.special {
+  background-color: #40C8C2;
+  color: #ffffff;
+}
+.panel.special h3 {
+  color: #ffffff;
+}
+.panel i.material-icons {
+  color: #26435F;
+}
+.night .panel i.material-icons {
+  color: #FFFFFF;
+}
+.panel.special i.material-icons {
+  color: #FFFFFF;
+}
+
+/* Calendar 'Widget' */
 .month {
   max-width: 350px;
   height: 250px;
@@ -183,46 +242,6 @@ h4 {
     margin: 20px;
   }
 }
-.night .panel {
-  background-color: #26435F;
-  color: #BDC6CF;
-}
-.panel p, .panel h3 {
-  margin-left: 0px;
-  text-align: left;
-  width: auto;
-}
-.panel.selected {
-  border: 2px solid #EE559C;
-  transition-property: border;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: border;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
-}
-.night .panel.selected {
-  border: 2px solid #DA83FF;
-}
-.panel.special {
-  background-color: #40C8C2;
-  color: #ffffff;
-}
-.panel.special h3 {
-  color: #ffffff;
-}
-.panel i.material-icons {
-  color: #26435F;
-}
-.night .panel i.material-icons {
-  color: #FFFFFF;
-}
-.panel.special i.material-icons {
-  color: #FFFFFF;
-}
-.night .panel.special i.material-icons {
-  color: #FFFFFF;
-}
 i.material-icons {
   vertical-align: middle;
   margin-right: 0.25em;
@@ -230,6 +249,7 @@ i.material-icons {
 i.material-icons::selection {
   background: transparent;
 }
+/* UI & Switch Toggles */
 .collapsed {
   opacity: 0;
 }
@@ -247,10 +267,6 @@ i.material-icons::selection {
 .panel.special i.material-icons.expand-collapse, .night .panel.special i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.4);
 }
-footer p {
-  text-align: center;
-  margin-left: 0px;
-}
 i.material-icons.week-month {
   opacity: 0.5;
   transition-property: opacity;
@@ -264,6 +280,7 @@ i.material-icons.week-month {
 i.material-icons.week-month.toggled {
   opacity: 1;
 }
+
 /*Vertical Mobile*/
 @media only screen and (max-width: 600px) {
   #day-night-toggle {
