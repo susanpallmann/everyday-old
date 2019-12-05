@@ -63,6 +63,11 @@ h4 {
   margin: auto;
   margin-bottom: 20px;
 }
+.small-container {
+  display: block;
+  max-width: 350;
+  margin: auto;
+}
 .night h3 {
   color: #FFFFFF;
 }
@@ -165,7 +170,7 @@ h4 {
   border: 3px solid rgba(255, 255, 255, 1);
 }
 @media only screen and (max-width: 350px) {
-  .panel, h4, .month {
+  .panel, h4, .month, .small-container {
     margin: 20px;
   }
 }
