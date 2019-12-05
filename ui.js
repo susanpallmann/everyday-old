@@ -22,9 +22,11 @@ $(document).ready(function(){
     if (expandCollapse.attr('aria-checked') === 'true') {
       expandCollapse.attr('aria-checked','false');
       expandCollapse.html("remove_circle");
+      $(thisPanel).children('p').removeClass('collapsed');
     } else {
       expandCollapse.attr('aria-checked','true');
       expandCollapse.html("add_circle");
+      $(thisPanel).children('p').addClass('collapsed');
     }
   });
 });
