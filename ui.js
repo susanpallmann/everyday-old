@@ -38,11 +38,11 @@ $(document).ready(function(){
   var nextMonthStart = new Date(currentYear, nextMonth,1);
   var firstDay = new Date(currentYear, currentMonth, 1);
   var firstWeekday = firstDay.getDay() + 1;
-  var numDays = new Date(nextMonthStart - 1).getDate();
+  var numDays = new Date(nextMonthStart - 1).getDate() + firstWeekday;
   var month = $('.month');
   month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
   console.log(numDays);
-  month.children('.day:nth-child(' + numDays + firstWeekday + ')').css('background-color','#40C8C2');
+  month.children('.day:nth-child(' + numDays + ')').css('background-color','#40C8C2');
 });
   function monthToString(val) {
     var number = val;
