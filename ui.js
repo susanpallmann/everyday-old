@@ -52,6 +52,13 @@ $(document).ready(function(){
       $(this).addClass('selected');
     }
   });
+  $('.week-month').click(function () {
+    if ( $(this).attr('aria-checked') === 'false') ) {
+      
+    } else {
+      $('.week-month').addClass('toggled');
+    }
+  });
 });
 function getNextMonth(val) {
   var number = val;
