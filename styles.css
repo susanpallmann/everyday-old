@@ -39,6 +39,48 @@ h3 {
 .night .panel i.material-icons {
   color: #FFFFFF;
 }
+.month .day, .week .day {
+  background-color: #FFFFFF;
+}
+.night .month .day, .night .week .day {
+  background-color: #26435F;
+}
+.month .day.first, .week .day.first {
+  background-color: #40C8C2;
+}
+.night .month .day.first, .night .week .day.first {
+  background-color: #40C8C2;
+}
+.month .day.last, .week .day.last {
+  background-color: #40C8C2;
+}
+.night .month .day.last, .night .week .day.last {
+  background-color: #40C8C2;
+}
+.month .day.ineligible, .week .day.ineligible {
+  background-color: #F0F0F0;
+}
+.night .month .day.ineligible, .night .week .day.ineligible {
+  background-color: #102438;
+}
+.month .day.today, .week .day.today {
+  background-color: #EE559C;
+}
+.night .month .day.today, .night .week .day.today {
+  background-color: #DA83FF;
+}
+.month .day.selected, .week .day.selected {
+  border: 3px solid rgba(38, 67, 95, 1);
+}
+.night .month .day.selected, .night .week .day.selected {
+  border: 3px solid rgba(255, 255, 255, 1);
+}
+.panel i.material-icons.expand-collapse {
+  color: rgba(38, 67, 95, 0.2);
+}
+.night .panel i.material-icons.expand-collapse {
+  color: rgba(255, 255, 255, 0.2);
+}
 
 /* General Styles */
 body {
@@ -100,6 +142,11 @@ a {
   max-width: 350px;
   margin: auto;
 }
+@media only screen and (max-width: 350px) {
+  .panel, h4, .month, .small-container {
+    margin: 20px;
+  }
+}
 footer p {
   text-align: center;
   margin-left: 0px;
@@ -154,7 +201,11 @@ footer p {
   margin: auto;
 }
 .day {
-  transition-property: border, background-color, width, height;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  border: 3px solid rgba(0, 0, 0, 0);
+  transition-property: border, background-color;
   transition-duration: .2s;
   transition-timing-function: linear;
   -webkit-transition-property: border;
@@ -164,31 +215,10 @@ footer p {
 .month .day {
   width: 13%;
   height: 18.5%;
-  box-sizing: border-box;
-  display: inline-block;
-  cursor: pointer;
-  border: 3px solid rgba(0, 0, 0, 0);
-  transition-property: border;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: border;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
-}
-.month .day, .week .day {
-  background-color: #FFFFFF;
-}
-.night .month .day, .night .week .day {
-  background-color: #26435F;
 }
 .week .day {
   width: 100%;
   height: 100px;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  display: inline-block;
-  cursor: pointer;
-  border: 3px solid rgba(0, 0, 0, 0);
   margin-bottom: 4px;
 }
 .month .day h4 {
@@ -200,42 +230,11 @@ footer p {
 .week .day:nth-child(n+8) {
   display: none;
 }
-.month .day.first, .week .day.first {
-  background-color: #40C8C2;
-}
-.night .month .day.first, .night .week .day.first {
-  background-color: #40C8C2;
-}
-.month .day.last, .week .day.last {
-  background-color: #40C8C2;
-}
-.night .month .day.last, .night .week .day.last {
-  background-color: #40C8C2;
-}
 .month .day.ineligible, .week .day.ineligible {
-  background-color: #F0F0F0;
   cursor: auto;
 }
-.night .month .day.ineligible, .night .week .day.ineligible {
-  background-color: #102438;
-}
-.month .day.today, .week .day.today {
-  background-color: #EE559C;
-}
-.night .month .day.today, .night .week .day.today {
-  background-color: #DA83FF;
-}
-.month .day.selected, .week .day.selected {
-  border: 3px solid rgba(38, 67, 95, 1);
-}
-.night .month .day.selected, .night .week .day.selected {
-  border: 3px solid rgba(255, 255, 255, 1);
-}
-@media only screen and (max-width: 350px) {
-  .panel, h4, .month, .small-container {
-    margin: 20px;
-  }
-}
+
+/* Icons */
 i.material-icons {
   vertical-align: middle;
   margin-right: 0.25em;
@@ -243,6 +242,7 @@ i.material-icons {
 i.material-icons::selection {
   background: transparent;
 }
+
 /* UI & Switch Toggles */
 .collapsed {
   opacity: 0;
@@ -255,10 +255,7 @@ i.material-icons::selection {
   color: rgba(38, 67, 95, 0.2);
   cursor: pointer;
 }
-.night .panel i.material-icons.expand-collapse {
-  color: rgba(255, 255, 255, 0.2);
-}
-.panel.special i.material-icons.expand-collapse, .night .panel.special i.material-icons.expand-collapse {
+.panel.special i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.4);
 }
 i.material-icons.week-month {
