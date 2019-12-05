@@ -126,6 +126,12 @@ h4 {
 .night .month .day.today {
   background-color: #DA83FF;
 }
+.month .day.selected {
+  border: 3px solid #FFF;
+}
+.night .month .day.selected {
+  border: 3px solid #FFF;
+}
 .night .month .day {
   background-color: #26435F;
 }
