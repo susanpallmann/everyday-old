@@ -40,9 +40,11 @@ $(document).ready(function(){
   var firstWeekday = firstDay.getDay() + 1;
   var numDays = new Date(nextMonthStart - 1).getDate() + firstWeekday - 1;
   var month = $('.month');
+  var todayModified = firstWeekday + currentDay - 1;
   month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
   console.log(numDays);
   month.children('.day:nth-child(' + numDays + ')').css('background-color','#40C8C2');
+  month.children('.day:nth-child(' + todayModified + ')').css('background-color','#DA83FF');
 });
   function monthToString(val) {
     var number = val;
