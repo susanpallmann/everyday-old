@@ -41,7 +41,8 @@ $(document).ready(function(){
   var numDays = new Date(nextMonthStart - 1) + firstWeekday;
   var month = $('.month');
   month.children('.day:nth-child(' + firstWeekday + ')').css('background-color','#40C8C2');
-  month.children('.day:nth-child(' + numDays + ')').css('background-color','#40C8C2');
+  console.log(numDays);
+  //month.children('.day:nth-child(' + numDays + ')').css('background-color','#40C8C2');
 });
   function monthToString(val) {
     var number = val;
