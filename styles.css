@@ -242,6 +242,18 @@ footer p {
   text-align: center;
   margin-left: 0px;
 }
+i.material-icons.week-month {
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
+}
+i.material-icons.week-month.toggled {
+  opacity: 1;
+}
 /*Vertical Mobile*/
 @media only screen and (max-width: 600px) {
   #day-night-toggle {
