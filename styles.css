@@ -1,7 +1,11 @@
 body {
+  background-color: #F0F0F0;
+  color: #102438;
+  font-family: "raleway", sans-serif;
+}
+body.night {
   background-color: #102438;
   color: #DDDDDD;
-  font-family: "raleway", sans-serif;
 }
 span.emphasis {
   color: #40C8C2;
@@ -9,7 +13,10 @@ span.emphasis {
 }
 a {
   text-decoration: none;
-  color: #DA83FF;
+  color: #EE559C;
+}
+.night a {
+  color: #DA83FF
 }
 p {
   margin-top: 0px;
@@ -31,15 +38,22 @@ h3 {
   font-size: 1.3em;
 }
 .panel {
-  background-color: #26435F;
+  background-color: #FFFFFF;
   border-radius: 10px;
   padding: 5px 20px;
   display: inline-block;
   font-size: 0.8em;
-  color: #BDC6CF;
+  color: #707C88;
   font-weight: 500;
 }
+.night .panel {
+  background-color: #26435F;
+  color: #BDC6CF;
+}
 .panel.selected {
+  border: 2px solid #EE559C;
+}
+.night .panel.selected {
   border: 2px solid #DA83FF;
 }
 .panel.special {
