@@ -58,6 +58,12 @@ h3 {
   margin: 10px;
   width: 300px;
   vertical-align: top;
+  transition-property: height;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .night .panel {
   background-color: #26435F;
