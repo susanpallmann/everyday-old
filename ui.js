@@ -30,15 +30,14 @@ $(document).ready(function(){
     }
   });
   var today = new Date();
-    var currentDay = today.getDate();
-    var currentMonth = today.getMonth();
-    var currentYear = today.getFullYear();
-    var monthString = monthtoString(currentMonth);
-
-    function monthToString(val) {
-      var number = val;
-      var allMonths = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", November", December"];
-      var monthString = allMonths[number];
-      console.log(number + ' ' + monthString);
-    }
+  var currentDay = today.getDate();
+  var currentMonth = today.getMonth();
+  var currentYear = today.getFullYear();
+  var monthString = monthtoString(currentMonth);
+  function monthToString(val) {
+    var number = val;
+    var allMonths = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var monthString = allMonths[number];
+    console.log(number + ' ' + monthString);
+  }
 });
