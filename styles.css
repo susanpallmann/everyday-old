@@ -294,8 +294,8 @@ nav ul li div {
 }
 .day div {
   cursor: pointer;
-  height: 100%;
   width: 100%;
+  padding-top: 100%;
   box-sizing: border-box;
   border: 3px solid rgba(0, 0, 0, 0);
   transition-property: border, background-color;
@@ -307,7 +307,6 @@ nav ul li div {
 }
 .month .day {
   width: 14.28%;
-  height: 18.5%;
   padding: 0px 2px;
 }
 .week .day {
