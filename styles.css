@@ -278,7 +278,6 @@ nav ul li div {
 /* Calendar 'Widget' */
 .month {
   max-width: 350px;
-  height: 250px;
   display: block;
   margin: auto;
 }
