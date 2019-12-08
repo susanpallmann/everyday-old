@@ -158,17 +158,17 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul li {
+nav li {
   display: inline-block;
 }
 nav p {
   font-size: 0.9em;
   font-weight: 600;
 }
-nav p {
+nav a {
   opacity: 0.4;
 }
-nav p.selected {
+nav a.selected {
   opacity: 1;
 }
 
