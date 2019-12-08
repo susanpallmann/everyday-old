@@ -196,7 +196,7 @@ footer p {
 .float-right {
   float: right;
 }
-.inline-block.container {
+.inline-block-container {
   display: inline-block;
 }
 
