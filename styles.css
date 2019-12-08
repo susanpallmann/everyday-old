@@ -167,6 +167,8 @@ nav p {
 }
 nav a {
   opacity: 0.4;
+  text-align: center;
+  display: inline-block;
 }
 nav a.selected {
   opacity: 1;
