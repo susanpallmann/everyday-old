@@ -192,9 +192,11 @@ footer p {
 }
 .float-left {
   float: left;
+  margin: 0;
 }
 .float-right {
   float: right;
+  margin: 0;
 }
 .inline-block-container {
   display: inline-block;
