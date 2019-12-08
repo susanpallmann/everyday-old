@@ -190,6 +190,12 @@ footer p {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
 
 /* Nav Menu */
 nav {
