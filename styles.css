@@ -154,7 +154,6 @@ footer p {
 
 /* Nav Menu */
 nav {
-  background-color: #26435F;
   position: fixed;
   width: 100%;
   top: 0;
@@ -164,10 +163,12 @@ nav {
 nav {
   background-color: #EBEBEB;
   color: #102438;
+  box-shadow: 0px 0px 50px #F0F0F0;
 }
 .night nav {
   background-color: #26435F;
   color: #DDDDDD;
+  box-shadow: 0px 0px 50px #102438;
 }
 nav ul {
   list-style-type: none;
