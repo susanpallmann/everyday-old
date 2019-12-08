@@ -175,7 +175,8 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  margin: 0px 0.5em;
+  margin: 0px;
+  width: 20%;
 }
 nav p {
   font-size: 0.9em;
