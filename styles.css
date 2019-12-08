@@ -208,7 +208,7 @@ nav a:after {
   margin-top: 0.4em;
 }
 nav ul li div {
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
