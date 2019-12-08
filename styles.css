@@ -237,13 +237,6 @@ nav ul li div {
 }
 /*Horizontal Mobile & Tablets*/
 @media only screen and (min-width: 601px) and (max-width:1000px) {
-  nav {
-    top: 0;
-    bottom: unset;
-  }
-  nav p {
-    display: unset;
-  }
 }
 /*Desktop*/
 @media only screen and (min-width: 1001px) {
