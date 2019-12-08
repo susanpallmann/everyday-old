@@ -176,6 +176,10 @@ a {
   max-width: 350px;
   margin: auto;
 }
+footer {
+  padding-bottom: 3.5em;
+  color: #5a6f84;
+}
 footer p {
   text-align: center;
   margin-left: 0px;
