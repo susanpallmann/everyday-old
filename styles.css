@@ -194,6 +194,12 @@ nav a {
 .night nav a {
   color: #DDDDDD;
 }
+nav a:after {
+  background-color: #DA83FF;
+  height: 5px;
+  width: 100%;
+  border-radius-top: 5px;
+}
 
 /* Panels */
 .panel {
