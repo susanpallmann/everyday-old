@@ -301,7 +301,7 @@ nav ul li div {
   -webkit-transition-timing-function: linear;
 }
 .month .day {
-  width: 13%;
+  width: 14.28%;
   height: 18.5%;
 }
 .week .day {
