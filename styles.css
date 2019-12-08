@@ -81,10 +81,22 @@ h3 {
 .night .panel i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.2);
 }
+nav a {
+  color: #102438;
+}
+.night nav a {
+  color: #DDDDDD;
+}
 nav a:after {
-  background-color: #EE559C;
+  color: #102438;
 }
 .night nav a:after {
+  color: #DDDDDD;
+}
+nav a.selected:after {
+  background-color: #EE559C;
+}
+.night nav a.selected:after {
   background-color: #DA83FF;
 }
 
@@ -197,14 +209,7 @@ nav a {
 nav a.selected {
   opacity: 1;
 }
-nav a {
-  color: #102438;
-}
-.night nav a {
-  color: #DDDDDD;
-}
 nav a:after {
-  background-color: #EE559C;
   height: 5px;
   width: 100%;
   border-top-left-radius: 5px;
