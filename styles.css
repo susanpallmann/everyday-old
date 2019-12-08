@@ -314,6 +314,9 @@ nav ul li div {
 .panel.special i.material-icons {
   color: #FFFFFF;
 }
+.panel i.material-icons {
+  margin-left: 0px;
+}
 .panel i.material-icons.carat-right {
   float: right;
   margin-top: 8px;
