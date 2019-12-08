@@ -200,6 +200,9 @@ nav a:after {
   height: 5px;
   width: 100%;
   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  content: "";
+  display: inline-block;
 }
 
 /* Panels */
