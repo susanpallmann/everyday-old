@@ -98,10 +98,10 @@ nav a {
   color: #DDDDDD;
 }
 nav a:after {
-  color: #102438;
+  background-color: #102438;
 }
 .night nav a:after {
-  color: #DDDDDD;
+  background-color: #DDDDDD;
 }
 nav a.selected:after {
   background-color: #EE559C;
