@@ -40,7 +40,7 @@ h3 {
   color: #FFFFFF;
 }
 .month .day div, .week .day div {
-  background-color: #FFFFFF;
+  background-color: #E2E3E4;
 }
 .night .month .day div, .night .week .day div {
   background-color: #26435F;
