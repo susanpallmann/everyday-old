@@ -298,16 +298,22 @@ nav ul li div {
 .day {
   box-sizing: border-box;
   display: inline-block;
+  transition-property: width;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 .day div {
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
   border: 3px solid rgba(0, 0, 0, 0);
-  transition-property: border;
+  transition-property: border, width;
   transition-duration: .2s;
   transition-timing-function: linear;
-  -webkit-transition-property: border;
+  -webkit-transition-property: border, width;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
