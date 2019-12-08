@@ -81,6 +81,16 @@ h3 {
 .night .panel i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.2);
 }
+nav {
+  background-color: #EBEBEB;
+  color: #102438;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+.night nav {
+  background-color: #26435F;
+  color: #DDDDDD;
+  box-shadow: 0px 0px 50px #102438;
+}
 nav a {
   color: #102438;
 }
@@ -173,16 +183,6 @@ nav {
   bottom: 0;
   padding-top: 1em;
   z-index: 5;
-}
-nav {
-  background-color: #EBEBEB;
-  color: #102438;
-  box-shadow: 0px 0px 50px #F0F0F0;
-}
-.night nav {
-  background-color: #26435F;
-  color: #DDDDDD;
-  box-shadow: 0px 0px 50px #102438;
 }
 nav ul {
   list-style-type: none;
