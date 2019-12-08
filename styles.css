@@ -310,10 +310,10 @@ nav ul li div {
   width: 100%;
   box-sizing: border-box;
   border: 3px solid rgba(0, 0, 0, 0);
-  transition-property: border, width;
+  transition-property: border;
   transition-duration: .2s;
   transition-timing-function: linear;
-  -webkit-transition-property: border, width;
+  -webkit-transition-property: border;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
