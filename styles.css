@@ -207,6 +207,10 @@ nav a:after {
   display: block;
   margin-top: 0.4em;
 }
+nav ul li div {
+  display: inline-block;
+  text-align: center;
+}
 
 /* Panels */
 .panel {
