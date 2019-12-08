@@ -204,6 +204,7 @@ nav a:after {
   border-top-right-radius: 5px;
   content: "";
   display: block;
+  margin-top: 0.4em;
 }
 
 /* Panels */
