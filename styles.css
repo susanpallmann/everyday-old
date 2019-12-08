@@ -286,6 +286,11 @@ nav ul li div {
 .panel.special i.material-icons {
   color: #FFFFFF;
 }
+.panel i.material-icons.carat-left {
+  float: right;
+  margin-top: 8px;
+  margin-right: -8px;
+}
 
 /* Calendar 'Widget' */
 .month {
