@@ -363,7 +363,7 @@ i.material-icons.week-month.toggled {
 
 /*Very Small Screens*/
 @media only screen and (max-width: 350px) {
-  .panel, h3, h4, .month, .small-container {
+  .panel, h4, .month, .small-container {
     margin: 20px 20px 20px 20px;
   }
 }
