@@ -152,6 +152,13 @@ footer p {
   margin-left: 0px;
 }
 
+/* Nav Menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Panels */
 .panel {
   border-radius: 10px;
