@@ -109,6 +109,12 @@ nav a.selected:after {
 .night nav a.selected:after {
   background-color: #DA83FF;
 }
+.bar {
+  background-color: #EE559C;
+}
+.night .bar {
+  background-color: #DA83FF;
+}
 
 /* General Styles */
 body {
@@ -177,6 +183,12 @@ footer p {
 .bar {
   height: 10px;
   border-radius: 5px;
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear;
 }
 
 /* Nav Menu */
