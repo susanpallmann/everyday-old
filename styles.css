@@ -298,12 +298,6 @@ nav ul li div {
 .day {
   box-sizing: border-box;
   display: inline-block;
-  transition-property: width;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: width;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
 }
 .day div {
   cursor: pointer;
