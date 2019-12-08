@@ -142,11 +142,6 @@ a {
   max-width: 350px;
   margin: auto;
 }
-@media only screen and (max-width: 350px) {
-  .panel, h4, .month, .small-container {
-    margin: 20px 20px 20px 20px;
-  }
-}
 footer p {
   text-align: center;
   margin-left: 0px;
@@ -366,6 +361,12 @@ i.material-icons.week-month.toggled {
   opacity: 1;
 }
 
+/*Very Small Screens*/
+@media only screen and (max-width: 350px) {
+  .panel, h4, .month, .small-container {
+    margin: 20px 20px 20px 20px;
+  }
+}
 /*Vertical Mobile*/
 @media only screen and (max-width: 600px) {
   #day-night-toggle {
