@@ -434,19 +434,10 @@ i.material-icons.week-month.toggled {
 }
 /*Vertical Mobile*/
 @media only screen and (max-width: 600px) {
-  #day-night-toggle {
-    text-align: center;
-  }
 }
 /*Horizontal Mobile & Tablets*/
 @media only screen and (min-width: 601px) and (max-width:1000px) {
-  #day-night-toggle {
-    float: right;
-  }
 }
 /*Desktop*/
 @media only screen and (min-width: 1001px) {
-  #day-night-toggle {
-    float: right;
-  }
 }
