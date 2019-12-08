@@ -81,6 +81,12 @@ h3 {
 .night .panel i.material-icons.expand-collapse {
   color: rgba(255, 255, 255, 0.2);
 }
+nav a:after {
+  background-color: #EE559C;
+}
+.night nav a:after {
+  background-color: #DA83FF;
+}
 
 /* General Styles */
 body {
@@ -198,7 +204,7 @@ nav a {
   color: #DDDDDD;
 }
 nav a:after {
-  background-color: #DA83FF;
+  background-color: #EE559C;
   height: 5px;
   width: 100%;
   border-top-left-radius: 5px;
