@@ -308,7 +308,7 @@ nav ul li div {
   padding: 0px
 }
 .month .day div {
-  padding-top: 100%;
+  padding-top: 95%;;
 }
 .week .day div {
   height: 100%;
