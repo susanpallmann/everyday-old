@@ -209,6 +209,12 @@ nav a {
   opacity: 0.4;
   text-align: center;
   display: inline-block;
+  transition-property: opacity, background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: opacity, background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear
 }
 nav a:hover {
   opacity: 1;
@@ -224,12 +230,6 @@ nav a:after {
   content: "";
   display: block;
   margin-top: 0.4em;
-  transition-property: background-color;
-  transition-duration: .2s;
-  transition-timing-function: linear;
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear;
 }
 nav ul li div {
   display: block;
