@@ -210,6 +210,9 @@ nav a {
   text-align: center;
   display: inline-block;
 }
+nav a:hover {
+  opacity: 1;
+}
 nav a.selected {
   opacity: 1;
 }
