@@ -153,6 +153,21 @@ footer p {
 }
 
 /* Nav Menu */
+nav {
+  background-color: #26435F;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 1em;
+}
+nav {
+  background-color: #EBEBEB;
+  color: #102438;
+}
+.night nav {
+  background-color: #26435F;
+  color: #DDDDDD;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
