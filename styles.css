@@ -180,6 +180,7 @@ nav li {
 nav p {
   font-size: 0.9em;
   font-weight: 600;
+  margin-bottom: 0px;
 }
 nav a {
   opacity: 0.4;
