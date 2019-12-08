@@ -198,6 +198,7 @@ footer p {
 }
 .inline-block-container {
   display: inline-block;
+  width: 100%;
 }
 
 /* Nav Menu */
