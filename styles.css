@@ -184,6 +184,10 @@ nav {
   padding-top: 1em;
   z-index: 5;
 }
+nav container {
+  max-width: 1200px;
+  margin: auto;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
