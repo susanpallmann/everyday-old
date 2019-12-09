@@ -115,6 +115,12 @@ nav a.selected:after {
 .night .bar .color-fill {
   background-color: #DA83FF;
 }
+.bar .color-fill div {
+  background-color: #E2E3E4;
+}
+.night .bar .colorfill div {
+  background-color: #26435F;
+}  
 p.caption {
   color: #707C88;
 }
@@ -239,6 +245,11 @@ footer p {
   -webkit-transition-property: background-color;
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
+  transform-origin: 0% 0%;
+}
+.bar .color-fill div {
+  height: 100%;
+  width:100%;
 }
 .float-left {
   float: left;
