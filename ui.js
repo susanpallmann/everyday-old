@@ -1,6 +1,14 @@
 //When page is ready, start event listeners
 $(document).ready(function(){
   
+  //Checks local storage to see if user has night mode enabled
+  var nightMode = localStorage.getItem("nightmode");
+  if (nightMode === "true") {
+    page.addClass('night');
+  } else {
+    page.removeClass('night');
+  }
+  
   //Toggles day/night mode
   //When the user clicks on the day/night mode toggle
   $('#day-night-toggle').click(function () {
@@ -15,6 +23,7 @@ $(document).ready(function(){
       dayNightToggle.attr('aria-checked','true');
       $('#day-mode').css('display', 'none');
       $('#night-mode').css('display', 'inline-block');
+      localStorage.setItem("nightmode", "true");
     } else {
     
       //Otherwise, deactivate night mode
@@ -22,6 +31,7 @@ $(document).ready(function(){
       dayNightToggle.attr('aria-checked','false');
       $('#day-mode').css('display', 'inline-block');
       $('#night-mode').css('display', 'none');
+      localStorage.setItem("nightmode", "false");
     }
   });
   
