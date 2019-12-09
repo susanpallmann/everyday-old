@@ -266,6 +266,9 @@ footer p {
   display: inline-block;
   width: 100%;
 }
+.script-display-none {
+  display: none;
+}
 
 /* Accordion */
 .accordion {
