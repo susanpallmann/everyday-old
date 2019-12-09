@@ -11,6 +11,10 @@ $(document).ready(function(){
     $('#day-night-toggle').attr('aria-checked','false');
   }
   
+  //Collapses accordions by default
+  var accordionContent = [];
+  $('.accordion-content').css('display', 'none');
+  
   //Toggles day/night mode
   //When the user clicks on the day/night mode toggle
   $('#day-night-toggle').click(function () {
