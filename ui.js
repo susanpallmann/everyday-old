@@ -5,8 +5,10 @@ $(document).ready(function(){
   var nightMode = localStorage.getItem("nightmode");
   if (nightMode === "true") {
     $(document.body).addClass('night');
+    $('#day-night-toggle').attr('aria-checked','true');
   } else {
     $(document.body).removeClass('night');
+    $('#day-night-toggle').attr('aria-checked','false');
   }
   
   //Toggles day/night mode
