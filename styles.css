@@ -413,6 +413,10 @@ i.material-icons.carat-left {
   margin-top: 8px;
   margin-left: -8px;
 }
+i.material-icons.carat-up {
+  float: right;
+  margin-top: 8px;
+}
 
 /* Calendar 'Widget' */
 .month {
