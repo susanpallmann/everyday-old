@@ -275,6 +275,15 @@ footer p {
   text-align: left;
   width: auto;
 }
+.accordion .accordion-content {
+  opacity: 1;
+  transition-property: opacity, background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  -webkit-transition-property: opacity, background-color;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: linear
+}
 
 /* Nav Menu */
 nav {
@@ -315,7 +324,7 @@ nav a {
   transition-timing-function: linear;
   -webkit-transition-property: opacity, background-color;
   -webkit-transition-duration: .2s;
-  -webkit-transition-timing-function: linear
+  -webkit-transition-timing-function: linear;
 }
 nav a:hover {
   opacity: 1;
