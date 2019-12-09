@@ -412,32 +412,15 @@ nav ul li div {
 .panel i.material-icons {
   margin-left: 0px;
 }
-i.material-icons.carat-right {
-  float: right;
-  margin-top: 8px;
-}
-i.material-icons.carat-down {
-  float: right;
-  margin-top: 8px;
-}
 .panel i.material-icons.carat-right {
   float: right;
   margin-top: 8px;
-  margin-right: -8px;
+  margin-right: -10px;
 }
 .panel i.material-icons.carat-down {
   float: right;
   margin-top: 8px;
   margin-right: -8px;
-}
-i.material-icons.carat-left {
-  float: left;
-  margin-top: 8px;
-  margin-left: -8px;
-}
-i.material-icons.carat-up {
-  float: right;
-  margin-top: 8px;
 }
 
 /* Calendar 'Widget' */
@@ -512,6 +495,23 @@ i.material-icons {
 }
 i.material-icons::selection {
   background: transparent;
+}
+i.material-icons.carat-right {
+  float: right;
+  margin-top: 8px;
+}
+i.material-icons.carat-down {
+  float: right;
+  margin-top: 8px;
+}
+i.material-icons.carat-left {
+  float: left;
+  margin-top: 8px;
+  margin-left: -8px;
+}
+i.material-icons.carat-up {
+  float: right;
+  margin-top: 8px;
 }
 
 /* UI & Switch Toggles */
