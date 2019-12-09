@@ -121,10 +121,10 @@ p.caption {
 .night p.caption {
   color: #BDC6CF;  
 }
-.night i.material-icon#day-mode {
+.night i#day-mode.material-icon {
   display: none;
 }
- i.material-icon#night-mode {
+ i#night-mode.material-icon {
    display: none;
 }
 
