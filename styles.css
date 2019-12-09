@@ -171,6 +171,12 @@ a {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear;
 }
+.profile-picture {
+  max-width: 100px;
+  border: 2px solid #26435F;
+  border-radius: 100%;
+  margin: auto;
+}
 .small-container {
   display: block;
   max-width: 350px;
