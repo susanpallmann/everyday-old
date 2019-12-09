@@ -72,6 +72,7 @@ $(document).ready(function(){
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.carat-down').html("expand_more");
       accordionBlock.children('.accordion-content').addClass('collapsed');
+      accordionBlock.children('.accordion-content').css('display', '');
     } else {
       
       //If not, check it, update the icon
