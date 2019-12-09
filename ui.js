@@ -4,9 +4,9 @@ $(document).ready(function(){
   //Checks local storage to see if user has night mode enabled
   var nightMode = localStorage.getItem("nightmode");
   if (nightMode === "true") {
-    page.addClass('night');
+    $(document.body).addClass('night');
   } else {
-    page.removeClass('night');
+    $(document.body).removeClass('night');
   }
   
   //Toggles day/night mode
