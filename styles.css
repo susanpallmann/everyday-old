@@ -127,6 +127,12 @@ i.material-icons#night-mode {
 .night i.material-icons#day-mode {
   display: none;
 }
+i.material-icons#day-mode {
+   display: inline-block;
+}
+.night i.material-icons#night-mode {
+  display: inline-block;
+}
 
 /* General Styles */
 body {
