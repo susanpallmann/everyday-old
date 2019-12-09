@@ -68,13 +68,13 @@ $(document).ready(function(){
       //Uncheck it, update the icon
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.carat-down').html("expand_less");
-      $('.accordion-content').children('p').addClass('collapsed');
+      $('.accordion-content').children('p').removeClass('collapsed');
     } else {
       
       //If not, check it, update the icon
       accordionSegment.attr('aria-checked','true');
       accordionSegment.children('i.carat-down').html("expand_more");
-      $('.accordion-content').children('p').removeClass('collapsed');
+      $('.accordion-content').children('p').addClass('collapsed');
       
     }
   });
