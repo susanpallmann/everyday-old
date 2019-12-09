@@ -270,6 +270,11 @@ footer p {
 }
 .accordion ul li {
 }
+.accordion h3 {
+  margin-left: 0px;
+  text-align: left;
+  width: auto;
+}
 
 /* Nav Menu */
 nav {
