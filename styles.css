@@ -503,7 +503,7 @@ i.material-icons::selection {
 
 /* UI & Switch Toggles */
 .collapsed {
-  opacity: 0;
+  opacity: 0 !important;
 }
 .panel i.material-icons.expand-collapse {
   font-size: 18px;
