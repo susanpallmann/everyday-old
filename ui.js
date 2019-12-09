@@ -60,9 +60,6 @@ $(document).ready(function(){
     var accordionSegment = $(this);
     var accordionBlock = accordionSegment.parent();
     
-    //jQuery default slideToggle effect
-    accordionBlock.children('.accordion-content').slideToggle( "fast" );
-    
     //If it's already checked
     if (accordionSegment.attr('aria-checked') === 'true') {
       //Uncheck it, update the icon
@@ -77,6 +74,8 @@ $(document).ready(function(){
       accordionSegment.children('.accordion-content').removeClass('collapsed');
       
     }
+    //jQuery default slideToggle effect
+    accordionBlock.children('.accordion-content').slideToggle( "fast" );
   });
   
   //Temporary system for having the calendar generate based on what day it is, probably will need rewritten once we have a database working, and overall I'm pretty sure we can find a more efficient way to do this (TODO)
