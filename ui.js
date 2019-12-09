@@ -65,13 +65,13 @@ $(document).ready(function(){
       //Uncheck it, update the icon
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.carat-down').html("expand_more");
-      accordionSegment.children('.accordion-content').addClass('collapsed');
+      accordionBlock.children('.accordion-content').addClass('collapsed');
     } else {
       
       //If not, check it, update the icon
       accordionSegment.attr('aria-checked','true');
       accordionSegment.children('i.carat-down').html("expand_less");
-      accordionSegment.children('.accordion-content').removeClass('collapsed');
+      accordionBlock.children('.accordion-content').removeClass('collapsed');
       
     }
     //jQuery default slideToggle effect
