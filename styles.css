@@ -262,6 +262,7 @@ footer p {
 
 /* Accordion */
 .accordion {
+  font-size: 0.8em;
 }
 .accordion ul {
   list-style-type: none;
