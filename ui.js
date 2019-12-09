@@ -21,16 +21,12 @@ $(document).ready(function(){
       //Activate night mode
       page.addClass('night');
       dayNightToggle.attr('aria-checked','true');
-      $('#day-mode').css('display', 'none');
-      $('#night-mode').css('display', 'inline-block');
       localStorage.setItem("nightmode", "true");
     } else {
     
       //Otherwise, deactivate night mode
       page.removeClass('night');
       dayNightToggle.attr('aria-checked','false');
-      $('#day-mode').css('display', 'inline-block');
-      $('#night-mode').css('display', 'none');
       localStorage.setItem("nightmode", "false");
     }
   });
