@@ -67,12 +67,12 @@ $(document).ready(function(){
     if (accordionSegment.attr('aria-checked') === 'true') {
       //Uncheck it, update the icon
       accordionSegment.attr('aria-checked','false');
-      accordionSegment.children('i').html("expand_less");
+      accordionSegment.children('i.carat-down').html("expand_less");
     } else {
       
       //If not, check it, update the icon
       accordionSegment.attr('aria-checked','true');
-      accordionSegment.children('i').html("expand_more");
+      accordionSegment.children('i.carat-down').html("expand_more");
     }
   });
   
