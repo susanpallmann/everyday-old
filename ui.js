@@ -65,14 +65,14 @@ $(document).ready(function(){
   $('div.accordion-head').click(function () {
     var accordionSegment = $(this);
     var accordionBlock = accordionSegment.parent();
+    accordionBlock.children('.accordion-content').css('display', '');
     
     //If it's already checked
     if (accordionSegment.attr('aria-checked') === 'true') {
       //Uncheck it, update the icon
       accordionSegment.attr('aria-checked','false');
       accordionSegment.children('i.carat-down').html("expand_more");
-      accordionBlock.children('.accordion-content').addClass('collapsed');
-      accordionBlock.children('.accordion-content').css('display', '');
+      accordionBlock.children('.accordion-content').addClass('collapsed');      
     } else {
       
       //If not, check it, update the icon
