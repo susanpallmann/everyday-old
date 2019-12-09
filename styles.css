@@ -139,6 +139,12 @@ i.material-icons#day-mode {
 .night i.material-icons#night-mode {
   display: inline-block;
 }
+.accordion ul li {
+  border-bottom: 2px solid #E2E3E4;
+}
+.night .accordion ul li {
+  border-bottom: 2px solid #26435F;
+}
 
 /* General Styles */
 body {
@@ -252,6 +258,17 @@ footer p {
 .inline-block-container {
   display: inline-block;
   width: 100%;
+}
+
+/* Accordion */
+.accordion {
+}
+.accordion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
 }
 
 /* Nav Menu */
