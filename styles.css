@@ -152,6 +152,12 @@ i.material-icons#day-mode {
 .night .accordion ul li {
   border-bottom: 2px solid #26435F;
 }
+.accordion ul {
+  border-top: 2px solid #E2E3E4;
+}
+.night .accordion ul {
+  border-top: 2px solid #26435F;
+}
 
 /* General Styles */
 body {
