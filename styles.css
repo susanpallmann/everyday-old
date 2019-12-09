@@ -285,6 +285,9 @@ footer p {
   text-align: left;
   width: auto;
 }
+.accordion .accordion-head {
+  cursor: pointer;
+}
 .accordion .accordion-content {
   opacity: 1;
   transition-property: opacity, background-color;
