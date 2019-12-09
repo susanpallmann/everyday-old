@@ -393,9 +393,17 @@ nav ul li div {
 i.material-icons.carat-right {
   float: right;
   margin-top: 8px;
-  margin-right: -8px;
 }
 i.material-icons.carat-down {
+  float: right;
+  margin-top: 8px;
+}
+.panel i.material-icons.carat-right {
+  float: right;
+  margin-top: 8px;
+  margin-right: -8px;
+}
+.panel i.material-icons.carat-down {
   float: right;
   margin-top: 8px;
   margin-right: -8px;
