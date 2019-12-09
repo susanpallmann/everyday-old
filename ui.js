@@ -55,6 +55,26 @@ $(document).ready(function(){
     }
   });
   
+  //Accordion functionality, listens for click on head of a given segment
+  $('div.accordion-head').click(function () {
+    var accordionSegment = $(this);
+    
+    //jQuery default slideToggle effect
+    accordionSegment.parent.children('.accordion-content').slideToggle( "fast" );
+    
+    //If it's already checked
+    if (accordionSegment.attr('aria-checked') === 'true') {
+      //Uncheck it, update the icon
+      accordionSegment.attr('aria-checked','false');
+      accordionSegment.children('i').html("expand_less");
+    } else {
+      
+      //If not, check it, update the icon
+      accordionSegment.attr('aria-checked','true');
+      accordionSegment.children('i').html("expand_more");
+    }
+  });
+  
   //Temporary system for having the calendar generate based on what day it is, probably will need rewritten once we have a database working, and overall I'm pretty sure we can find a more efficient way to do this (TODO)
   var today = new Date(); //Returns full date
   var currentDay = today.getDate(); //Returns 1-31
