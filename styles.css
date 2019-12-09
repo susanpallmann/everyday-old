@@ -368,10 +368,20 @@ nav ul li div {
 .panel i.material-icons {
   margin-left: 0px;
 }
-.panel i.material-icons.carat-right {
+i.material-icons.carat-right {
   float: right;
   margin-top: 8px;
   margin-right: -8px;
+}
+i.material-icons.carat-down {
+  float: right;
+  margin-top: 8px;
+  margin-right: -8px;
+}
+i.material-icons.carat-left {
+  float: left;
+  margin-top: 8px;
+  margin-left: -8px;
 }
 
 /* Calendar 'Widget' */
