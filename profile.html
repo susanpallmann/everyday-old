@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EveryDay</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="discount-bootstrap.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="ui.js"></script>
+    </head>
+    <body class="night">
+        <header>
+          <div>
+            <nav>
+              <div class="container">
+                <ul>
+                  <li><div><a href="/"><i class="material-icons">home</i><p>Home</p></a></div></li><!--
+                  --><li><div><a href=""><i class="material-icons">today</i><p>Today</p></a></div></li><!--
+                  --><li><div><a href=""><i class="material-icons">bar_chart</i><p>Stats</p></a></div></li><!--
+                  --><li><div><a href=""><i class="material-icons">trending_up</i><p>Insights</p></a></div></li><!--
+                  --><li><div><a href="" class="selected"><i class="material-icons">account_circle</i><p>Profile</p></a></div></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="column span12">
+                        <h1>every<span class="emphasis">day</span></h1>
+                          <h3>Panel Title</h3>
+                          <i class="material-icons expand-collapse" role="switch" aria-checked="false">remove_circle</i>
+                          <p>Example text just to give this panel some room.</p>
+                        </div>
+                        <div class="panel selected">
+                          <i class="material-icons">emoji_food_beverage</i>
+                          <h3>Panel Title</h3>
+                          <i class="material-icons expand-collapse" role="switch" aria-checked="false">remove_circle</i>
+                          <p>Example text just to give this panel some room. What happens if I make the text in this panel a little longer?</p>
+                        </div>
+                        <h3><span class="emphasis">username</span>, #123</h3>
+                        <p class="caption">User for 3 months, 13 days.</p>
+                        <div class="small-container">
+                            <div class="profile-picture">
+                                <img src="images/profile-picture.svg"><!--
+                            --></div>
+                        </div>
+                        <div class="small-container">
+                          <div class="inline-block-container">
+                            <h4 class="float-left">Streak</h4><h4 class="float-right">7 days</h4>
+                          </div>
+                        </div>
+                        <div class="small-container">
+                          <div class="bar">
+                          </div>
+                        </div>
+                        <div class="panel">
+                            <i class="material-icons">flag</i>
+                            <h3>Goals</h3>
+                            <i class="material-icons expand-collapse" role="switch" aria-checked="false">remove_circle</i>
+                        </div>
+                        <div class="panel">
+                            <i class="material-icons">settings</i>
+                            <h3>Settings</h3>
+                            <i class="material-icons carat-right">navigate_next</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDUYFu9TzsSdR3SQptEQFwOCTP2aQTAAOM",
+                authDomain: "everyday-9d803.firebaseapp.com",
+                databaseURL: "https://everyday-9d803.firebaseio.com",
+                projectId: "everyday-9d803",
+                storageBucket: "everyday-9d803.appspot.com",
+                messagingSenderId: "346714875169",
+                appId: "1:346714875169:web:45816449f49c465c46ca60"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <footer>
+          <div class="small-container">
+            <div class="inline-block-container">
+              <p class="float-left">© Josh Ahlers & Susan Pallmann 2019</p>
+              <div class="float-right" id="day-night-toggle" role="switch" aria-checked="true">
+                <i class="material-icons" id="night-mode">brightness_high</i>
+                <i class="material-icons" id="day-mode" style="display: none;">brightness_3</i>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>
