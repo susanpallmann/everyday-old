@@ -65,7 +65,7 @@ $(document).ready(function(){
   $('div.accordion-head').click(function () {
     var accordionSegment = $(this);
     var accordionBlock = accordionSegment.parent();
-    accordionBlock.children('.accordion-content').css('display', '');
+    accordionBlock.children('.accordion-content').css('display', 'block');
     
     //If it's already checked
     if (accordionSegment.attr('aria-checked') === 'true') {
