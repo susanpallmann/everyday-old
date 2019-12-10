@@ -22,6 +22,9 @@ $(document).ready(function(){
         case "nightmode":
           purpose = "Remembers your prefered display mode (night mode vs. default), where 'true' means night mode is enabled.";
         break;
+        case "username":
+          purpose = "Remembers your username so it can be loaded to pages faster.";
+        break;
         default:
           purpose = "Error fetching purpose."
       }
