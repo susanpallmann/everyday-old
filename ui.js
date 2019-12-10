@@ -60,6 +60,7 @@ $(document).ready(function(){
       var editButton = container.children('.edit-button');
       var content = form.children('#text-box').val();
       text.html(content);
+      localStorage.setItem("username", content);
       text.css('display','inline');
       editButton.css('display','inline-block');
       form.remove();
