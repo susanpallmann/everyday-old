@@ -40,18 +40,18 @@ $(document).ready(function(){
   });
   $('.edit-cancel').click(function () {
     var cancelButton = $(this);
-    var container = cancelButton.parent();
+    var form = cancelButton.parent();
+    var container = form.parent();
     var text = container.children('.editable-text');
-    var form = container.children('.edit-text-form');
     var editButton = container.children('.edit-button');
     text.css('display','inline');
     form.remove();
   });
   $('.edit-confirm').click(function () {
     var confirmButton = $(this);
-    var container = cancelButton.parent();
+    var form = cancelButton.parent();
+    var container = form.parent();
     var text = container.children('.editable-text');
-    var form = container.children('.edit-text-form');
     var editButton = container.children('.edit-button');
     var content = form.children(input).val();
     text.html(val);
