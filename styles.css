@@ -291,6 +291,10 @@ footer p {
   text-align: left;
   width: auto;
 }
+.accordion p {
+  font-size: 0.9em;
+  opacity: 0.5;
+}
 .accordion .accordion-head {
   cursor: pointer;
 }
