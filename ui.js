@@ -39,6 +39,7 @@ $(document).ready(function(){
     container.append('<form class="edit-text-form"><input class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
   });
   $('.edit-cancel').click(function () {
+    console.log("cancel button pressed");
     var cancelButton = $(this);
     var form = cancelButton.parent();
     var container = form.parent();
@@ -48,6 +49,7 @@ $(document).ready(function(){
     form.remove();
   });
   $('.edit-confirm').click(function () {
+    console.log("confirm button pressed");
     var confirmButton = $(this);
     var form = cancelButton.parent();
     var container = form.parent();
