@@ -36,8 +36,7 @@ $(document).ready(function(){
   var username = localStorage.getItem("username");
   if ( username === null ) {
   } else {
-    var usernameFields = [];
-    usernameFields = $('.username');
+    var usernameFields = $('.username');
     for (var i = 0; i < usernameFields.length; i++) {
     usernameFields[i].html(username);
     }
