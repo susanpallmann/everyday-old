@@ -30,12 +30,13 @@ $(document).ready(function(){
   }
   
   //Fills in username using name on file in local storage
-  if ( localStorage.getItem("username").length ) {
-    var username = localStorage.getItem("username");
+  var username = localStorage.getItem("username");
+  if ( username === null ) {
+  } else {
     var usernameFields = [];
     usernameFields = $('.username');
     for (var i = 0; i < usernameFields.length; i++) {
-      usernameFields[i].html(username);
+    usernameFields[i].html(username);
     }
   }
   
@@ -230,4 +231,13 @@ function getNextMonth(val) {
     nextMonth = number ++;
   }
   return nextMonth; //Returns a number indicating what next month will be
+}
+
+//Checks if browser has local storage
+function localStorageSupported() {
+  try {
+    return "localStorage" in window && window["localStorage"] !== null;
+  } catch (e) {
+    return false;
+  }
 }
