@@ -48,6 +48,7 @@ $(document).ready(function(){
       var text = container.children('.editable-text');
       var editButton = container.children('.edit-button');
       text.css('display','inline');
+      editButton.css('display','inline-block');
       form.remove();
     });
     $('.edit-confirm').click(function () {
@@ -58,8 +59,9 @@ $(document).ready(function(){
       var text = container.children('.editable-text');
       var editButton = container.children('.edit-button');
       var content = form.children(input).val();
-      text.html(val);
+      text.html(content);
       text.css('display','inline');
+      editButton.css('display','inline-block');
       form.remove();
     });
   }
