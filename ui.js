@@ -53,7 +53,7 @@ $(document).ready(function(){
     $('.edit-confirm').click(function () {
       console.log("confirm button pressed");
       var confirmButton = $(this);
-      var form = cancelButton.parent();
+      var form = confirmButton.parent();
       var container = form.parent();
       var text = container.children('.editable-text');
       var editButton = container.children('.edit-button');
