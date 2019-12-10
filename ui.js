@@ -11,6 +11,24 @@ $(document).ready(function(){
     $('#day-night-toggle').attr('aria-checked','false');
   }
   
+  if ( $('#cookies-info').length ) {
+    for (var i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      var value = localStorage.getItem(key);
+      var purpose;
+      $( '#cookies-info' ).append('<p class="cookie-name">' + key + '</p>');
+      $( '#cookies-info' ).append('<p class="cookie-value">' + value + '</p>');
+      switch(key) {
+        case nightmode:
+          purpose = "Remembers your prefered display mode (night mode vs. default).";
+        break;
+        default:
+          purpose = "Error fetching purpose."
+      }
+      $( '#cookies-info' ).append('<p class="cookie-purpose">' + purpose + '</p>');
+    }
+  }
+  
   //Collapses accordions by default
   var accordionContent = [];
   $('.accordion-content').css('display', 'none');
