@@ -38,7 +38,7 @@ $(document).ready(function(){
   } else {
     $(".username").each(function( index ) {
     $(this).html(username);
-    }
+    });
   }
   
   //Edit Button
