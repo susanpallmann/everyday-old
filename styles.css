@@ -303,6 +303,16 @@ footer p {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: linear
 }
+/* Cookies Info */
+.cookie-name {
+}
+.cookie-value {
+  font-weight: 700;
+}
+.cookie-purpose {
+  font-size: 0.9em;
+  opacity: 0.5;
+}
 
 /* Nav Menu */
 nav {
