@@ -29,6 +29,16 @@ $(document).ready(function(){
     }
   }
   
+  //Fills in username using name on file in local storage
+  if ( localStorage.getItem("username").length ) {
+    var username = localStorage.getItem("username");
+    var usernameFields = [];
+    usernameFields = $('.username');
+    for (var i = 0; i < usernameFields.length; i++) {
+      usernameFields[i].html(username);
+    }
+  }
+  
   //Edit Button
   $('.edit-button').click(function () {
     var button = $(this);
