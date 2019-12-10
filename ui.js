@@ -29,6 +29,33 @@ $(document).ready(function(){
     }
   }
   
+  //Edit Button
+  $('.edit-button').click(function () {
+    var button = $(this);
+    var container = button.parent();
+    var text = container.children('.editable-text');
+    text.css('display','none');
+    container.append('<form class="edit-text-form"><input class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
+  });
+  $('.edit-cancel').click(function () {
+    var cancelButton = $(this);
+    var container = cancelButton.parent();
+    var text = container.children('.editable-text');
+    var form = container.children('.edit-text-form');
+    text.css('display','inline');
+    form.remove();
+  });
+  $('.edit-confirm').click(function () {
+    var confirmButton = $(this);
+    var container = cancelButton.parent();
+    var text = container.children('.editable-text');
+    var form = container.children('.edit-text-form');
+    var content = form.children(input).val();
+    text.html(val);
+    text.css('display','inline');
+    form.remove();
+  });
+  
   //Collapses accordions by default
   var accordionContent = [];
   $('.accordion-content').css('display', 'none');
