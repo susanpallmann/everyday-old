@@ -34,6 +34,7 @@ $(document).ready(function(){
     var button = $(this);
     var container = button.parent();
     var text = container.children('.editable-text');
+    button.css('display','none');
     text.css('display','none');
     container.append('<form class="edit-text-form"><input class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
   });
@@ -42,6 +43,7 @@ $(document).ready(function(){
     var container = cancelButton.parent();
     var text = container.children('.editable-text');
     var form = container.children('.edit-text-form');
+    var editButton = container.children('.edit-button');
     text.css('display','inline');
     form.remove();
   });
@@ -50,6 +52,7 @@ $(document).ready(function(){
     var container = cancelButton.parent();
     var text = container.children('.editable-text');
     var form = container.children('.edit-text-form');
+    var editButton = container.children('.edit-button');
     var content = form.children(input).val();
     text.html(val);
     text.css('display','inline');
