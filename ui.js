@@ -19,7 +19,7 @@ $(document).ready(function(){
       $( '#cookies-info' ).append('<p class="cookie-name">' + key + '</p>');
       $( '#cookies-info' ).append('<p class="cookie-value">' + value + '</p>');
       switch(key) {
-        case nightmode:
+        case "nightmode":
           purpose = "Remembers your prefered display mode (night mode vs. default).";
         break;
         default:
