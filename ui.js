@@ -20,7 +20,7 @@ $(document).ready(function(){
       $( '#cookies-info' ).append('<p class="cookie-value">' + value + '</p>');
       switch(key) {
         case "nightmode":
-          purpose = "Remembers your prefered display mode (night mode vs. default).";
+          purpose = "Remembers your prefered display mode (night mode vs. default), where 'true' means night mode is enabled.";
         break;
         default:
           purpose = "Error fetching purpose."
