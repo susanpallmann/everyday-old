@@ -48,7 +48,7 @@ $(document).ready(function(){
     var text = container.children('.editable-text');
     button.css('display','none');
     text.css('display','none');
-    container.append('<form class="edit-text-form"><input id="text-box" class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
+    container.children('.edit-form').append('<form class="edit-text-form"><input id="text-box" class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
     buttonsEnable();
   });
   function buttonsEnable() {
