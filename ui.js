@@ -45,9 +45,11 @@ $(document).ready(function(){
   $('.edit-button').click(function () {
     var button = $(this);
     var container = button.parent();
-    var text = container.children('.editable-text');
+    var changeText = container.children('.editable-text');
+    var noChangeText = container.children('.edit-no-edit');
     button.css('display','none');
-    text.css('display','none');
+    changeText.css('display','none');
+    noChangeText.css('display','none');
     container.children('.edit-form').append('<form class="edit-text-form"><input id="text-box" class="styleless-text-form" type="text" name="text"><i class="material-icons edit-confirm">check</i><i class="material-icons edit-cancel">close</i></form>');
     buttonsEnable();
   });
@@ -57,9 +59,11 @@ $(document).ready(function(){
       var cancelButton = $(this);
       var form = cancelButton.parent();
       var container = form.parent();
-      var text = container.children('.editable-text');
+      var changeText = container.children('.editable-text');
+      var noChangeText = container.children('.edit-no-edit');
       var editButton = container.children('.edit-button');
-      text.css('display','inline');
+      changeText.css('display','inline');
+      noChangeText.css('display','inline');
       editButton.css('display','inline-block');
       form.remove();
     });
@@ -68,12 +72,14 @@ $(document).ready(function(){
       var confirmButton = $(this);
       var form = confirmButton.parent();
       var container = form.parent();
-      var text = container.children('.editable-text');
+      var changeText = container.children('.editable-text');
+      var noChangeText = container.children('.edit-no-edit');
       var editButton = container.children('.edit-button');
       var content = form.children('#text-box').val();
-      text.html(content);
+      changeText.html(content);
       localStorage.setItem("username", content);
-      text.css('display','inline');
+      changeText.css('display','inline');
+      noChangeText.css('display','inline');
       editButton.css('display','inline-block');
       form.remove();
     });
