@@ -158,6 +158,14 @@ i.material-icons#day-mode {
 .night .accordion ul {
   border-top: 2px solid #26435F;
 }
+.styleless-text-form {
+  background-color: #E2E3E4;
+  color: #102438;
+}
+.night .styleless-text-form {
+  background-color: #26435F;
+  color: #ffffff;
+}
 
 /* General Styles */
 body {
@@ -532,6 +540,18 @@ i.material-icons.carat-left {
 i.material-icons.carat-up {
   float: right;
   margin-top: 8px;
+}
+
+/* Forms, Inputs, & Buttons */
+.styleless-text-form {
+  border: 0px;
+  border-radius: 5px;
+  height: 2em;
+  font-family: 'raleway';
+  font-weight: 500;
+  font-size: 1em;
+  padding-left: 0.5em;
+  box-sizing: border-box;
 }
 
 /* UI & Switch Toggles */
