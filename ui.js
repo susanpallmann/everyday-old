@@ -58,7 +58,8 @@ $(document).ready(function(){
       console.log("cancel button pressed");
       var cancelButton = $(this);
       var form = cancelButton.parent();
-      var container = form.parent();
+      var formSpan = form.parent();
+      var container = formSpan.parent();
       var changeText = container.children('.editable-text');
       var noChangeText = container.children('.edit-no-edit');
       var editButton = container.children('.edit-button');
@@ -71,7 +72,8 @@ $(document).ready(function(){
       console.log("confirm button pressed");
       var confirmButton = $(this);
       var form = confirmButton.parent();
-      var container = form.parent();
+      var formSpan = form.parent();
+      var container = formSpan.parent();
       var changeText = container.children('.editable-text');
       var noChangeText = container.children('.edit-no-edit');
       var editButton = container.children('.edit-button');
