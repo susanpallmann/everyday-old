@@ -250,3 +250,4 @@ function localStorageSupported() {
     return false;
   }
 }
+//This is just to say I committed today so I look more productive on Github ;)
