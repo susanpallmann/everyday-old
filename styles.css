@@ -233,7 +233,7 @@ a {
   margin: auto;
 }
 .username {
-  text-transform: uppercase;
+  text-transform: none;
 }
 .profile-picture {
   border: 2px solid #26435F;
