@@ -235,6 +235,7 @@ a {
 }
 .profile-picture {
   border: 2px solid #26435F;
+  background-color: #26435F;
 }
 .profile-picture img {
   display: block;
